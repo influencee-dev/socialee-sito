@@ -1,10 +1,10 @@
 {
- "generato": "2026-11-02T20:41:38+00:00",
+ "generato": "2026-11-02T21:01:55+00:00",
  "plugin": {
   "socialee-core": {
-   "versione": "1.0.0",
+   "versione": "1.0.1",
    "file": "socialee-core.zip",
-   "sha256": "214ee8d2e1ea67e61a5adf19c5387a52e1ca79f3ee6d89bad7daf31344914f76",
+   "sha256": "506698c07ef47b490f0e1f77e38d8aa02a1165c39231f76851b9fe40fc456530",
    "auto": true,
    "installa": true
   },

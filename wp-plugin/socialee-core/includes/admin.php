@@ -6,8 +6,9 @@ defined( 'ABSPATH' ) || exit;
 add_action(
 	'admin_menu',
 	function () {
-		add_menu_page( 'Socialee', 'Socialee', 'manage_options', 'socialee', 'scl_admin_page', 'dashicons-star-filled', 3 );
-		add_submenu_page( 'socialee', 'Socialee', 'Impostazioni', 'manage_options', 'socialee', 'scl_admin_page' );
+		// slug proprio: «socialee» è già usato da un altro plugin del sito (assets) e i due menu si sovrapponevano
+		add_menu_page( 'Socialee Sito', 'Socialee Sito', 'manage_options', 'socialee-sito', 'scl_admin_page', 'dashicons-star-filled', 3 );
+		add_submenu_page( 'socialee-sito', 'Socialee Sito', 'Impostazioni', 'manage_options', 'socialee-sito', 'scl_admin_page' );
 	}
 );
 
@@ -18,7 +19,7 @@ add_action(
 			wp_die( 'Non consentito.' );
 		}
 		$do   = isset( $_POST['do'] ) ? sanitize_key( $_POST['do'] ) : '';
-		$back = admin_url( 'admin.php?page=socialee' );
+		$back = admin_url( 'admin.php?page=socialee-sito' );
 		if ( 'chiave' === $do ) {
 			$key = 'scl_' . wp_generate_password( 40, false, false );
 			update_option( 'scl_key_hash', scl_key_hash( $key ), false );
@@ -81,7 +82,7 @@ function scl_admin_page() {
 	$src = scl_source();
 	?>
 	<div class="wrap">
-		<h1>Socialee <?php echo esc_html( SCL_VERSION ); ?></h1>
+		<h1>Socialee Sito <?php echo esc_html( SCL_VERSION ); ?></h1>
 		<p>Le pagine del plugin <b>Socialee Pagine</b> sono servite con lo stesso URL di oggi, in HTML5 e senza Elementor. Title, description e dati strutturati restano di Rank Math; cookie banner, pixel e moduli dei plugin di sempre.</p>
 		<?php if ( ! $src ) : ?><div class="notice notice-error"><p>Manca il plugin <b>Socialee Pagine</b>: installalo e attivalo.</p></div><?php endif; ?>
 
@@ -125,3 +126,12 @@ function scl_admin_page() {
 	</div>
 	<?php
 }
+
+/** Link «Impostazioni» sotto il plugin nell'elenco Plugin. */
+add_filter(
+	'plugin_action_links_socialee-core/socialee-core.php',
+	function ( $links ) {
+		array_unshift( $links, '<a href="' . esc_url( admin_url( 'admin.php?page=socialee-sito' ) ) . '">Impostazioni e chiave per Claude</a>' );
+		return $links;
+	}
+);

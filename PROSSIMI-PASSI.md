@@ -11,7 +11,7 @@
    Carica plugin → Attiva). Entro un'ora installa e attiva Socialee Core e Socialee Pagine: le 31 pagine passano al
    template nuovo (Elementor resta acceso, serve ancora ad academy e articoli). Per non aspettare:
    Strumenti → Socialee Aggiornamenti → «Controlla adesso».
-2. *Socialee → Impostazioni → Crea la chiave per Claude* e salvarla come segreto di rete (sito `socialee.it`,
+2. *Socialee Sito → Impostazioni → Crea la chiave per Claude* e salvarla come segreto di rete (sito `socialee.it`,
    percorso `/wp-json/socialee-sito/`, intestazione `X-Socialee-Key`). Poi una sessione nuova.
 
 ## Da fare con l'accesso (Claude)

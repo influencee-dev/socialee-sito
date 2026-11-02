@@ -3,7 +3,7 @@
  * Modulo contatti → Brevo, dal server.
  * Prima la pagina /contatti/ chiamava api.brevo.com dal browser con la chiave API dentro il JavaScript (visibile a
  * chiunque). Ora il modulo manda i dati qui e la chiave resta sul server: costante SOCIALEE_BREVO_KEY in wp-config.php
- * oppure Socialee → Impostazioni. Senza chiave la richiesta arriva per email (nessun contatto perso).
+ * oppure Socialee Sito → Impostazioni. Senza chiave la richiesta arriva per email (nessun contatto perso).
  *
  * POST /wp-json/socialee-sito/v1/contatto  {email, nome, azienda, telefono, pacchetto, messaggio, sito_web (trappola)}
  */

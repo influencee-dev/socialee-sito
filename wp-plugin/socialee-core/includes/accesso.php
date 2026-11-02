@@ -4,7 +4,7 @@
  *
  * - MCP (JSON-RPC 2.0 su HTTP):  POST /wp-json/socialee-sito/v1/mcp   (GET = elenco strumenti)
  * - Zip di un plugin Socialee:   POST /wp-json/socialee-sito/v1/plugin?attiva=1  (corpo = zip, intestazione X-Sha256)
- * - Chiave: intestazione X-Socialee-Key, creata in Socialee → Impostazioni (mostrata una volta, si salva solo
+ * - Chiave: intestazione X-Socialee-Key, creata in Socialee Sito → Impostazioni (mostrata una volta, si salva solo
  *   l'impronta). 20 chiavi sbagliate dallo stesso indirizzo = 10 minuti di blocco. Le azioni girano come
  *   l'amministratore che ha creato la chiave e finiscono nel registro.
  */

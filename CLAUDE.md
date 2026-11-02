@@ -28,7 +28,7 @@ Sito WordPress **socialee.it** (agenzia creativa di Influencee SRL). Stesso sche
   `socialee__controlla-pagina` (path), `socialee__plugin-elenco`, `socialee__plugin-attiva` (file, attiva, conferma),
   `socialee__registro`.
 - Zip: `POST https://socialee.it/wp-json/socialee-sito/v1/plugin?attiva=1`, corpo = zip, intestazione `X-Sha256`.
-- Chiave: intestazione `X-Socialee-Key`, creata in *Socialee → Impostazioni → Crea la chiave per Claude*, salvata dal
+- Chiave: intestazione `X-Socialee-Key`, creata in *Socialee Sito → Impostazioni → Crea la chiave per Claude*, salvata dal
   titolare come segreto di rete (sito `socialee.it`, percorso `/wp-json/socialee-sito/`). Il proxy la aggiunge da solo.
 - Sul sito c'è anche un vecchio bridge `claude/v1` (non nostro): non usarlo, va disattivato.
 - Regole: una richiesta alla volta; disattivare prima di eliminare; chiedere al titolare prima di cancellare.

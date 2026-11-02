@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Socialee Core
  * Description:       Il sito socialee.it senza Elementor: serve le pagine del plugin Socialee Pagine con lo stesso URL e un HTML5 pulito, mette intestazione e piè di pagina di Socialee su tutto il sito, dà a Claude un accesso con chiave propria (MCP e caricamento dei plugin Socialee). SEO, cookie banner, pixel e moduli restano dei plugin di oggi (Rank Math, iubenda, tandem-forms).
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Influencee SRL (Socialee)
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SCL_VERSION', '1.0.0' );
+define( 'SCL_VERSION', '1.0.1' );
 define( 'SCL_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SCL_URL', plugin_dir_url( __FILE__ ) );
 
