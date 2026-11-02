@@ -1,0 +1,4900 @@
+{
+ "/affissioni/": {
+  "title": "Servizio: Affissioni e Out of Home | Socialee.",
+  "description": "Affissioni e out of home: poster 6x3, pensiline MUPI e affissione dinamica. Impianto grafico progettato per essere letto dalla distanza.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/affissioni/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-svc-ooh-poster.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/affissioni/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/affissioni/",
+         "name": "Servizio: Affissioni e Out of Home"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/affissioni/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Vi occupate anche di prenotare gli impianti?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Ragioniamo insieme su zone, formati e periodo, poi la prenotazione passa dalle concessionarie che gestiscono gli spazi. Noi consegniamo gli esecutivi nei formati richiesti e seguiamo il coordinamento."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto testo posso mettere su un 6&#215;3?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Poco. Un maxi affissione si legge in tre secondi da dodici metri: un messaggio, un marchio, eventualmente un riferimento per approfondire. Tutto quello che aggiungete oltre non viene letto e toglie spazio a ci&#242; che conta."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Meglio i poster o le pensiline?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Cambiano il pubblico e il tempo di lettura. Il 6&#215;3 lo vede chi passa in auto, per pochi secondi: serve per notoriet&#224;. La pensilina la legge chi aspetta l'autobus, anche per minuti: regge pi&#249; informazioni e sta a livello dello sguardo. Spesso ha senso usarli insieme."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso riusare le grafiche dei social?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Non direttamente. I formati sono diversi e soprattutto lo &#232; la distanza di lettura: un contenuto pensato per uno schermo a venti centimetri non funziona su un impianto stradale. Partiamo dallo stesso impianto visivo del brand, ma il layout si riprogetta."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3720",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3720",
+  "slug": "affissioni",
+  "sha": "be32bb1d6b72"
+ },
+ "/book-fotografici/": {
+  "title": "Servizio: Book Fotografici | Socialee.",
+  "description": "Shooting fotografici professionali per brand: editorial, e-commerce, food, beauty e ritratto. Set, luci, post-produzione e diritti d'uso inclusi.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/book-fotografici/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/fotografia-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/book-fotografici/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/book-fotografici/",
+         "name": "Servizio: Book Fotografici"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/book-fotografici/#service",
+      "name": "Book fotografici e shooting per brand",
+      "serviceType": "Book fotografici e shooting per brand",
+      "description": "Shooting fotografici professionali per brand: editorial, e-commerce, food, beauty e ritratto. Set, luci, post-produzione e diritti d'uso inclusi.",
+      "url": "https://socialee.it/book-fotografici/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/book-fotografici/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto costa uno shooting?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Shooting prodotto medio (20-40 SKU): &#8364;1.500-&#8364;3.500. Editorial half-day: &#8364;1.800-&#8364;4.000. Editorial full-day con cast: &#8364;4.000-&#8364;10.000. Portrait personal brand: &#8364;800-&#8364;1.500."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Lavorate solo in studio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Studio dedicato per pack/still life. Location esterne (case, locali, paesaggi) per editorial e lifestyle. Trasferte fuori citt&#224; gestite con preventivo separato."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Tempi di consegna?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "First selection in 5 giorni. Retouch finale in 10-14 giorni. Per progetti urgenti (es. lancio in 7 giorni) lavoriamo con rush e meno round revisioni."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanti round di revisione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "2 round inclusi: prima consegna selezione, feedback cliente, retouch finale. Round aggiuntivi a tariffa oraria."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Includete model release?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Tutti i talent firmano model release con scope d'uso definito (durata, canali, territori). Niente sorprese su utilizzi futuri."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I sorgenti raw sono inclusi?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No, di standard. Consegniamo le foto retoccate finali in alta risoluzione + formati per ogni canale. Sorgenti raw disponibili a richiesta come archivio aggiuntivo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso comprare singole foto?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Per shooting brand standard, no &#8212; il pacchetto &#232; completo. Se vuoi comprare foto singole dal nostro stock (foto generiche gi&#224; esistenti), abbiamo libreria."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3347",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3347",
+  "slug": "book-fotografici",
+  "sha": "1878b1c82d04"
+ },
+ "/case-study/": {
+  "title": "Case Study | Socialee.",
+  "description": "I risultati veri di cinque clienti Socialee: AlfaDocs, Xian Sushi, Manava Viaggi, BollettaGenius e Martucci Fitness. Situazione, intervento e numeri misurati.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/case-study/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-case-study.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/case-study/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/case-study/",
+         "name": "Case Study"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/case-study/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Questi numeri sono garantiti anche per noi?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No, e diffidate di chi ve lo promette. Sono i risultati ottenuti su quei clienti, in quei mercati, con quei budget e in quei periodi. Quello che garantiamo per iscritto &#232; un'altra cosa: +30% di visibilit&#224; in 60 giorni, misurata su reach, impression e visite rispetto ai 60 giorni precedenti, a parit&#224; di budget. Se non ci arriviamo, rimborsiamo o lavoriamo gratis fino a raggiungerlo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Da dove vengono questi dati?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Dagli strumenti dei clienti: Google Ads per AlfaDocs, Instagram Insights per gli altri. I periodi di confronto sono indicati caso per caso. Non usiamo stime, proiezioni o medie di settore."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "In quanto tempo si vedono i primi risultati?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Sui contenuti organici i primi segnali arrivano entro 30-60 giorni: sono i tempi con cui gli algoritmi ricalibrano la distribuzione di un profilo che cambia formato. Sull'advertising la lettura &#232; pi&#249; rapida, ma serve un mese di dati puliti prima di ottimizzare sul serio. Sulla SEO si ragiona in mesi, non in settimane."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Lavorate solo con aziende di Foggia?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Il nostro radicamento &#232; in Puglia e i clienti locali sono una parte importante del lavoro, ma seguiamo progetti in tutta Italia. Per le riprese ci spostiamo; per il resto la distanza non &#232; mai stata un problema."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3273",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3273",
+  "slug": "case-study",
+  "sha": "8a7c6f9a438b"
+ },
+ "/chi-siamo/": {
+  "title": "Chi Siamo | Socialee.",
+  "description": "Chi è Socialee: Agenzia Tech Creativa di Foggia con produzione interna di contenuti, brand e automazioni. Un solo team dal primo reel all'ultimo funnel.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/chi-siamo/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-chi-siamo.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/chi-siamo/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/chi-siamo/",
+         "name": "Chi Siamo"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3360",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3360",
+  "slug": "chi-siamo",
+  "sha": "b5a3e79baaa3"
+ },
+ "/communication-strategies/": {
+  "title": "Communication Strategies | Socialee.",
+  "description": "Strategia di comunicazione prima del piano editoriale: cosa dite, a chi e per ottenere cosa. Il documento su cui si appoggia tutto il resto.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/communication-strategies/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/communication-strategies-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/communication-strategies/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/communication-strategies/",
+         "name": "Communication Strategies"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/communication-strategies/#service",
+      "name": "Strategia di comunicazione",
+      "serviceType": "Strategia di comunicazione",
+      "description": "Strategia di comunicazione prima del piano editoriale: cosa dite, a chi e per ottenere cosa. Il documento su cui si appoggia tutto il resto.",
+      "url": "https://socialee.it/communication-strategies/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/communication-strategies/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto dura un percorso strategy?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "4-6 settimane dal kickoff alla consegna del documento finale. Workshop interno richiede 2 giorni in presenza (o online intensivo). Implementazione successiva &#232; separata e pu&#242; durare mesi."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Va bene anche per startup?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Soprattutto per startup. Pi&#249; del 70% delle startup early-stage spende su tattica senza aver definito posizionamento. Una strategia ti fa risparmiare 6-12 mesi di test sui canali sbagliati."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa serve da parte vostra?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Disponibilit&#224; del founder o decision-maker per il workshop di 2 giorni, accesso a 5-10 clienti reali per le interviste, accesso ai dati esistenti (analytics, CRM, ricerche di mercato precedenti)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso usarla solo con voi?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No, la strategia &#232; tua. Il deliverable &#232; un documento operativo che chiunque (team interno, freelance, agenzia esterna) pu&#242; eseguire. Spesso lo facciamo proprio per chi poi lavora con altri."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto costa?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Audit + workshop + deliverable: &#8364;8.000-&#8364;15.000 in base alla complessit&#224; del brand. Per startup early-stage abbiamo un percorso ridotto a &#8364;4.500 con scope pi&#249; focalizzato."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "&#200; diverso da un brand book?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Il brand book &#232; la grammatica VISIVA (logo, palette, font, regole). La strategia &#232; la grammatica STRATEGICA (posizionamento, audience, narrativa). Spesso si fanno insieme."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Mi date anche l'esecuzione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Possiamo. Una volta definita la strategia, il team Socialee implementa con i pacchetti standard (social, automation, ads, eventi). Oppure consegniamo solo il documento e lavorate con chi volete."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3474",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3474",
+  "slug": "communication-strategies",
+  "sha": "acb81e933311"
+ },
+ "/community/": {
+  "title": "Community | Socialee.",
+  "description": "La community Socialee: il rapporto con il cliente non finisce con il contratto. Confronto continuo, aggiornamenti e supporto anche dopo il progetto.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/community/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/community/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/community/",
+         "name": "Community"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3344",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3344",
+  "slug": "community",
+  "sha": "8dad54b89402"
+ },
+ "/consulenza-ai/": {
+  "title": "Consulenza AI | Socialee.",
+  "description": "Consulenza AI per aziende: dove l'intelligenza artificiale fa risparmiare ore vere su contenuti, risposte e analisi. Workflow concreti, non slide.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/consulenza-ai/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-consulenza-ai.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/consulenza-ai/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/consulenza-ai/",
+         "name": "Consulenza AI"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/consulenza-ai/#service",
+      "name": "Consulenza sull'adozione dell'intelligenza artificiale",
+      "serviceType": "Consulenza sull'adozione dell'intelligenza artificiale",
+      "description": "Consulenza AI per aziende: dove l'intelligenza artificiale fa risparmiare ore vere su contenuti, risposte e analisi. Workflow concreti, non slide.",
+      "url": "https://socialee.it/consulenza-ai/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3478",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3478",
+  "slug": "consulenza-ai",
+  "sha": "ecfa42142aab"
+ },
+ "/contatti/": {
+  "title": "Contatti | Socialee.",
+  "description": "Parla con Socialee: quindici minuti per capire se possiamo aiutarti. Ti risponde una persona vera entro 4 ore lavorative. Foggia e tutta Italia.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/contatti/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/contatti/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/contatti/",
+         "name": "Contatti"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/contatti/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Devo avere gi&#224; un sito per lavorare con voi?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Se sei nel pacchetto Accelerator o Elite, te lo realizziamo (o facciamo restyling). Nel pacchetto Starter ti aiutiamo con una landing dedicata."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Serve che abbia gi&#224; contenuti da usare?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. I contenuti li produciamo insieme: video con gli influencer, script, materiali editoriali. Se ne hai di tuoi, tanto meglio &#8212; li integriamo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Lavorate con aziende fuori Italia?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, se parlano italiano o inglese e il target &#232; raggiungibile dai nostri network influencer. Fai la call esplorativa e ti diciamo se ha senso."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Come funziona il pagamento?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Fatturiamo mensilmente, con bonifico bancario o carta. Il primo pagamento avviene alla firma del contratto. Nessun anticipo annuale, nessuna trappola."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa succede se i risultati non arrivano?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Hai garanzia scritta +30% di visibilit&#224; in 60 giorni. Se non la tocchiamo a parit&#224; di condizioni, o rimborsiamo o lavoriamo gratis finch&#233; non ci arriviamo. E, in qualunque momento, puoi uscire senza penali."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3361",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3361",
+  "slug": "contatti",
+  "sha": "4ab8dacce501"
+ },
+ "/digital-advertising/": {
+  "title": "Servizio: Digital Advertising | Socialee.",
+  "description": "Campagne Meta, Google e TikTok gestite sugli stessi contenuti che produciamo. Lead qualificati, conversioni offline al CRM e report leggibili.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/digital-advertising/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/digita-marketing-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/digital-advertising/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/digital-advertising/",
+         "name": "Servizio: Digital Advertising"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/digital-advertising/#service",
+      "name": "Campagne di digital advertising",
+      "serviceType": "Campagne di digital advertising",
+      "description": "Campagne Meta, Google e TikTok gestite sugli stessi contenuti che produciamo. Lead qualificati, conversioni offline al CRM e report leggibili.",
+      "url": "https://socialee.it/digital-advertising/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/digital-advertising/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto budget minimo serve per le ads?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Per Meta/Google performance: minimo &#8364;3.000-&#8364;5.000/mese di spesa. Sotto &#232; difficile generare segnale statistico significativo. Per TikTok: &#8364;1.500-&#8364;3.000 minimo. Sotto questi range il sistema non impara abbastanza."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto costa il vostro servizio (oltre il budget ads)?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Management fee: 12-18% del budget gestito (con minimo &#8364;1.500/mese). Include creative testing, tracking setup, dashboard, ottimizzazione daily, report settimanale. Pacchetti continuativi a partire da Accelerator."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Su quante piattaforme lavorate?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Meta (FB+IG), Google (Search/Display/YouTube/Shopping), TikTok, LinkedIn, Pinterest, Reddit, Snap, Programmatic (DV360). Stack consigliato in base a target e settore. Non lavoriamo \"ovunque\" &#8212; selezioniamo dove ha senso."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "In quanto tempo si vedono risultati?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Setup tecnico (tracking, pixel, audience): 2-3 settimane. Prime ottimizzazioni misurabili: 30 giorni. Performance stabilizzata e scalabile: 60-90 giorni dal kickoff."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa serve da parte mia?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Accesso ad account ads esistenti (o creiamo nuovi), accesso pixel/CAPI, brand guidelines, prodotti/listino, eventi conversion definiti, decision-maker raggiungibile per approvazioni. Idealmente 1 ora settimanale per allineamento."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso fermarmi quando voglio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Lavoriamo mensile senza vincoli annuali. Maggior parte dei clienti resta 12+ mesi perch&#233; serve tempo per scalare seriamente e i ritorni si compongono."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa rende le vostre campagne diverse?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Tre cose: (1) creative testing aggressivo (6-8/settimana vs 2-3 standard agenzie), (2) tracking server-side proper (CAPI + GTM, non solo pixel client-side), (3) dashboard live invece di report PDF mensile."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3356",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3356",
+  "slug": "digital-advertising",
+  "sha": "bd70f1048e72"
+ },
+ "/digital-media/": {
+  "title": "Digital Media | Socialee.",
+  "description": "Consulenza sul media stack: scelta dei canali, mix di budget e struttura del team interno. Retainer annuale con review trimestrali.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/digital-media/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-digital-media.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/digital-media/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/digital-media/",
+         "name": "Digital Media"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/digital-media/#service",
+      "name": "Pianificazione media digitale",
+      "serviceType": "Pianificazione media digitale",
+      "description": "Consulenza sul media stack: scelta dei canali, mix di budget e struttura del team interno. Retainer annuale con review trimestrali.",
+      "url": "https://socialee.it/digital-media/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3477",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3477",
+  "slug": "digital-media",
+  "sha": "3efc3c58358a"
+ },
+ "/eventi/": {
+  "title": "Servizio: Eventi | Socialee.",
+  "description": "Organizzazione eventi aziendali, di piazza e in teatro: location, allestimento, grafica, riprese e sponsorizzazioni. Dal palco alla brochure.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/eventi/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/eventi-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/eventi/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/eventi/",
+         "name": "Servizio: Eventi"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/eventi/#service",
+      "name": "Organizzazione e gestione di eventi",
+      "serviceType": "Organizzazione e gestione di eventi",
+      "description": "Organizzazione eventi aziendali, di piazza e in teatro: location, allestimento, grafica, riprese e sponsorizzazioni. Dal palco alla brochure.",
+      "url": "https://socialee.it/eventi/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/eventi/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Con quanto anticipo vi devo contattare?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Per eventi aziendali medi (50-300 ospiti) idealmente 8-12 settimane prima. Per eventi grandi (500+ o di piazza) 4-6 mesi. Riusciamo anche su tempi pi&#249; stretti, ma lavoriamo sempre meglio con margine per scelte strategiche."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Lavorate fuori dalla vostra citt&#224;?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Abbiamo gestito eventi in 20 citt&#224; italiane. Per eventi fuori sede coordiniamo fornitori locali con il nostro project manager in loco. Costi viaggio e logistica sono trasparenti in preventivo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Vi occupate solo della parte digitale o anche della logistica?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Tutto. Logistica fisica (venue, catering, hostess, security, permessi) + parte digitale (booking, content, marketing automation, post-evento). Decidi tu cosa includere; i pacchetti vanno dal solo digitale al chiavi in mano."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Come funziona il booking online?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Costruiamo una landing dedicata con form RSVP o ticketing. Ogni iscritto entra automaticamente nel CRM, riceve conferma via email e reminder programmati. Il giorno dell'evento puoi vedere presenze live e checkin tramite QR code."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso usare l'evento per generare lead?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "&#200; esattamente uno dei nostri obiettivi principali. Il booking online raccoglie contatti qualificati prima dell'evento. Durante l'evento attiviamo touchpoint per database building. Dopo, segmentiamo e ricontattiamo con flow automatici."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Trovate sponsor per il mio evento?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. &#200; una delle leve che pi&#249; cambia il budget di un evento. Costruiamo i pacchetti sponsor (visibilit&#224; logo, branded experience, content rights), selezioniamo brand coerenti col tuo, vendiamo e gestiamo la relazione fino al consuntivo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto costa organizzare un evento con voi?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Dipende: dimensione, location, contenuto. Eventi aziendali piccoli da 8-15K, medi 25-60K, grandi 80K+. Eventi di piazza dipendono da permessi e produzione. In ogni caso ti diamo un range concreto entro 3 giorni dal brief."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3471",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3471",
+  "slug": "eventi",
+  "sha": "4875f8ecc9d5"
+ },
+ "/grafica/": {
+  "title": "Servizio: Grafica e Design | Socialee.",
+  "description": "Grafica e design per brand: locandine, packaging, key visual, brand book e materiali stampa. Il primo impatto del marchio, prima delle parole.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/grafica/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/grafica-e-design-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/grafica/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/grafica/",
+         "name": "Servizio: Grafica e Design"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/grafica/#service",
+      "name": "Grafica, design e identità visiva",
+      "serviceType": "Grafica, design e identità visiva",
+      "description": "Grafica e design per brand: locandine, packaging, key visual, brand book e materiali stampa. Il primo impatto del marchio, prima delle parole.",
+      "url": "https://socialee.it/grafica/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/grafica/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto ci vuole per una locandina?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Prima bozza in 3 giorni dal brief. Revisione + chiusura entro 7-10 giorni. Per progetti urgenti (eventi imminenti) lavoriamo in 48h con un piccolo extra di rush."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "E per un sito web?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Sito vetrina 5-7 sezioni: 2-4 settimane. E-commerce o sito complesso: 6-10 settimane. Landing single-page collegate a marketing automation: 10-14 giorni. Tempi sempre concordati nel preventivo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa cambia tra locandina e brand book?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Una locandina serve per un'occasione specifica. Il brand book costruisce le regole con cui poi tutte le locandine future si fanno da sole. Per chi fa eventi spesso o ha più prodotti, il brand book si ripaga in pochi mesi."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Stampate voi i materiali?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Coordiniamo la stampa con tipografi di fiducia in tutta Italia. Selezioniamo carta, finiture, tirature in base al budget. Possiamo gestire spedizione direttamente al tuo evento o sede."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I sorgenti del progetto sono miei?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Sì, sempre. Consegniamo file aperti (Figma, Adobe), sorgenti stampa, asset web. È tuo, anche se cambi agenzia. Le licenze font commerciali le acquistiamo a tuo nome quando necessario."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso avere un solo materiale o serve un pacchetto?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Anche un singolo progetto. Locandina singola, etichetta, sito vetrina, post template. Per chi ha bisogni continuativi proponiamo i pacchetti che includono grafica + social + ads."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Lavorate solo con brand grandi?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Lavoriamo con startup, professionisti, piccole imprese, brand consolidati. Il pacchetto Starter (€2.497/mese) include una locandina o key visual al mese, perfetto per chi inizia."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3349",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3349",
+  "slug": "grafica",
+  "sha": "510b251443cd"
+ },
+ "/growth-hacking/": {
+  "title": "Growth Hacking | Socialee.",
+  "description": "Crescita per esperimenti misurabili invece che per intuizione: ipotesi, test, analisi, iterazione. Si tiene ciò che funziona sui vostri numeri.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/growth-hacking/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/growth-hacking-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/growth-hacking/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/growth-hacking/",
+         "name": "Growth Hacking"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/growth-hacking/#service",
+      "name": "Growth hacking e sperimentazione",
+      "serviceType": "Growth hacking e sperimentazione",
+      "description": "Crescita per esperimenti misurabili invece che per intuizione: ipotesi, test, analisi, iterazione. Si tiene ci&#242; che funziona sui vostri numeri.",
+      "url": "https://socialee.it/growth-hacking/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/growth-hacking/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Cos'&#232; il growth hacking, in pratica?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Un sistema di lavoro per crescere pi&#249; velocemente: piccoli esperimenti misurabili (test su prodotto, marketing, prezzo, onboarding) che cumulano vantaggio. Niente \"trucchi virali\", molta disciplina."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Funziona solo per startup tech?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Funziona per qualsiasi business misurabile: e-commerce, SaaS, servizi B2B, retail digitale. Cambiano gli strumenti ma il metodo &#232; uguale."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto budget serve?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Variabile. Pacchetto growth hacking minimo &#8364;4.500/mese (4-5 esperimenti gestiti). Sopra ai &#8364;10K/mese si gira un team pi&#249; ampio con esperimenti su prodotto, marketing e revenue contemporaneamente."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "In quanto tempo si vedono risultati?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Primi insight nelle prime 4 settimane. Crescita misurabile dopo 60-90 giorni. Effetto cumulativo significativo dopo 6-12 mesi (ogni test vincente compone il vantaggio)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa serve da parte mia?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Accesso a dati (analytics, CRM, prodotto), 1 ora a settimana per allineamento, decision-maker raggiungibile per approvazione esperimenti che richiedono modifiche prodotto."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "&#200; diverso dalle ads?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Le ads sono UNO dei canali su cui possiamo testare. Il growth hacking lavora su prodotto, onboarding, retention, prezzo, channel mix. Le ads sole non risolvono se il problema &#232; il churn."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso fermarmi quando voglio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Lavoriamo su pacchetti mensili senza vincoli lunghi. La maggior parte dei clienti resta 12+ mesi perch&#233; il sistema diventa parte del modo di lavorare."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3475",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3475",
+  "slug": "growth-hacking",
+  "sha": "d81ec6ac7ec9"
+ },
+ "/": {
+  "title": "Home | Socialee.",
+  "description": "Socialee è l'Agenzia Tech Creativa che parte dai social e arriva alla marketing automation. Produzione interna, un solo interlocutore, +30% di visibilità garantito.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+  "og_type": "website",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "url": "https://socialee.it",
+      "logo": {
+       "@type": "ImageObject",
+       "@id": "https://socialee.it/#logo",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp",
+       "contentUrl": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp",
+       "caption": "Socialee",
+       "inLanguage": "it-IT"
+      }
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://socialee.it/#website",
+      "url": "https://socialee.it",
+      "name": "Socialee",
+      "publisher": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "inLanguage": "it-IT",
+      "potentialAction": {
+       "@type": "SearchAction",
+       "target": "https://socialee.it/?s={search_term_string}",
+       "query-input": "required name=search_term_string"
+      }
+     },
+     {
+      "@type": "ImageObject",
+      "@id": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-home.webp",
+      "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-home.webp",
+      "width": "200",
+      "height": "200",
+      "inLanguage": "it-IT"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://socialee.it/#webpage",
+      "url": "https://socialee.it/",
+      "name": "Home | Socialee.",
+      "datePublished": "2026-04-23T07:15:42+00:00",
+      "dateModified": "2026-09-08T15:08:26+00:00",
+      "about": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "isPartOf": {
+       "@id": "https://socialee.it/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-home.webp"
+      },
+      "inLanguage": "it-IT"
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "home",
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3363",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3363",
+  "slug": "home",
+  "sha": "52e18b74dfa3"
+ },
+ "/influencer/": {
+  "title": "Servizio: Influencer Marketing | Socialee.",
+  "description": "Campagne influencer su Instagram, TikTok e YouTube: selezione sul target vero, contratti e diritti d'uso gestiti da noi, risultati misurabili.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/influencer/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/influencer-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/influencer/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/influencer/",
+         "name": "Servizio: Influencer Marketing"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/influencer/#service",
+      "name": "Campagne di influencer marketing",
+      "serviceType": "Campagne di influencer marketing",
+      "description": "Campagne influencer su Instagram, TikTok e YouTube: selezione sul target vero, contratti e diritti d'uso gestiti da noi, risultati misurabili.",
+      "url": "https://socialee.it/influencer/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/influencer/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quale tier scelgo?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Nano (10-50K) per advocacy con budget basso e engagement alto. Micro (50-500K) per conversion con ROI calcolabile. Macro/top per awareness e media reach. Te lo consigliamo dopo aver capito il tuo obiettivo specifico."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto costa una campagna?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Nano singolo: &#8364;300-&#8364;800. Micro: &#8364;1.500-&#8364;8.000. Macro: &#8364;15.000-&#8364;80.000. Top tier: &#8364;50.000+. Pacchetto multi-influencer (es. 10 nano): &#8364;4.000-&#8364;8.000."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Come misurate i risultati?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Link UTM personalizzati, codici sconto univoci, pixel tracking, dashboard live. Vedi reach, engagement, click, conversioni in tempo reale. Report finale con tutto consolidato."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso usare influencer anche su TikTok / YouTube?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Network copre IG, TikTok, YouTube, LinkedIn. Per ogni piattaforma raccomandiamo profili e formato adatti (reel IG, video TikTok, Shorts YT, post LinkedIn)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa controllate prima di proporre un influencer?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Demographic audience (geo, et&#224;, gender), engagement rate reale (non visibile), fake follower ratio, brand collaboration storia, allineamento valoriale al tuo brand, sentiment commenti recenti."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Diritto d'uso del contenuto influencer?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Standard: contenuto pubblicato sul profilo influencer, diritto a repost da te per 30 giorni. Per ads/uso esteso si negozia separatamente. Tutto scritto nel contratto."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Differenza tra UGC e influencer?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "UGC = creator produce contenuto, lo posti TU sul tuo profilo. Influencer = creator posta sul SUO profilo, tagga te. UGC &#232; pi&#249; performance-driven, influencer &#232; pi&#249; reach/awareness driven."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3346",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3346",
+  "slug": "influencer",
+  "sha": "9a99f724c92b"
+ },
+ "/marketing-automation/": {
+  "title": "Servizio: Marketing Automation | Socialee.",
+  "description": "Funnel, email e SMS automatici, integrazione CRM: un sistema che raccoglie contatti, li qualifica e li riporta quando sono pronti a comprare.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/marketing-automation/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/marketing-automation/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/marketing-automation/",
+         "name": "Servizio: Marketing Automation"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/marketing-automation/#service",
+      "name": "Marketing automation e lead generation",
+      "serviceType": "Marketing automation e lead generation",
+      "description": "Funnel, email e SMS automatici, integrazione CRM: un sistema che raccoglie contatti, li qualifica e li riporta quando sono pronti a comprare.",
+      "url": "https://socialee.it/marketing-automation/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/marketing-automation/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Cosa significa che il sistema base &#232; incluso gratis?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Vuol dire che in ogni pacchetto Socialee, dal primo giorno, costruiamo una landing page + sistema di raccolta lead + dashboard di base. Non &#232; un upsell: ce lo mettiamo perch&#233; vogliamo che i risultati siano misurabili da subito, cos&#236; tu capisci se il lavoro funziona."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Va bene per qualsiasi settore?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Funziona ovunque ci sia un cliente da contattare: servizi, retail, professionisti, B2B, B2C. Cambiano le leve (prenotazione, preventivo, form guida, checkout) ma la struttura &#232; la stessa. Vedi i 5 case per capire come lo adattiamo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quale sistema di automation usate?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Dipende dallo stack del cliente. Partiamo con tool come ActiveCampaign, Brevo, Mailchimp+Zapier, HubSpot free, oppure ci colleghiamo al tuo CRM esistente. Prima scegliamo cosa serve, poi installiamo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Come vedo i risultati?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Dashboard settimanale con: lead entrati, sorgente traffico, tasso di conversione landing, appuntamenti/vendite generate. Non &#232; una slide &#8212; &#232; un link a dati live che vedi quando vuoi."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa succede se poi voglio staccarmi?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Il sistema &#232; tuo. Landing, database contatti, automazioni &#8212; tutto resta nei tuoi account (non nei nostri). Se finisce il contratto, ti lasciamo la macchina funzionante e la documentazione."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Serve un sito web per partire?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. La landing dedicata &#232; separata dal sito e pu&#242; vivere da sola. Se poi vuoi un sito completo, lo facciamo come progetto aggiuntivo (vedi servizio sito web)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto ci mette a funzionare?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Prima landing live in 10&#8211;14 giorni. Primo lead qualificato tipicamente nella prima settimana di traffico. Benchmark significativo dopo 60&#8211;90 giorni di dati."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3354",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3354",
+  "slug": "marketing-automation",
+  "sha": "1c05ee48b9ab"
+ },
+ "/marketing-trading/": {
+  "title": "Marketing & Trading | Socialee.",
+  "description": "Consulenza su numeri, prezzi e margini: lettura dei dati e priorità di investimento prima di muovere il budget. Percorso graduale, senza rivoluzioni.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/marketing-trading/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-marketing-trading.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/marketing-trading/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/marketing-trading/",
+         "name": "Marketing &#038; Trading"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/marketing-trading/#service",
+      "name": "Allineamento marketing e sales",
+      "serviceType": "Allineamento marketing e sales",
+      "description": "Consulenza su numeri, prezzi e margini: lettura dei dati e priorit&#224; di investimento prima di muovere il budget. Percorso graduale, senza rivoluzioni.",
+      "url": "https://socialee.it/marketing-trading/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3476",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3476",
+  "slug": "marketing-trading",
+  "sha": "8c141829363e"
+ },
+ "/merchandising/": {
+  "title": "Servizio: Merchandising | Socialee.",
+  "description": "Gadget brandizzati per la tua azienda: shopper, tazze, t-shirt e quaderni. Produzione, personalizzazione e consegna gestite interamente da noi.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/merchandising/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-svc-merch-shopper.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/merchandising/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/merchandising/",
+         "name": "Servizio: Merchandising"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/merchandising/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Qual &#232; la quantit&#224; minima per un ordine?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Dipende dall'oggetto e dalla tecnica di stampa. Su shopper e t-shirt si parte in genere da poche decine di pezzi, sulle tazze da quantit&#224; simili. Ditecelo e vi diamo il minimo reale per quello che vi serve, senza obbligarvi a ordinare pi&#249; del necessario."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso usare grafiche che ho gi&#224;?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, se sono in formato vettoriale o ad alta risoluzione. Se avete solo il logo in JPG lo ricostruiamo noi: &#232; un lavoro breve e serve comunque, perch&#233; un logo sgranato in stampa si vede molto pi&#249; che a schermo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto tempo serve dalla conferma alla consegna?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Il collo di bottiglia &#232; quasi sempre l'approvazione, non la produzione. Una volta approvato il mockup si ragiona in settimane, con i tempi esatti che dipendono dalla lavorazione e dalla stagione &#8212; sotto Natale tutto si allunga."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Il merchandising &#232; incluso nei pacchetti?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No, i materiali offline si aggiungono a preventivo su qualsiasi pacchetto. La progettazione grafica invece rientra nel lavoro di brand che facciamo gi&#224;, quindi non la pagate due volte."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3718",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3718",
+  "slug": "merchandising",
+  "sha": "93fd013c7a39"
+ },
+ "/pacchetti/": {
+  "title": "Pacchetti | Socialee.",
+  "description": "I pacchetti Socialee: Starter da 2.497€, Accelerator da 5.497€, Elite da 9.997€ al mese. Prezzi trasparenti e garanzia +30% visibilità in 60 giorni.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/pacchetti/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/pacchetti/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/pacchetti/",
+         "name": "Pacchetti"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "@id": "https://socialee.it/pacchetti/#offerte",
+      "name": "Pacchetti Socialee",
+      "url": "https://socialee.it/pacchetti/",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "name": "Starter &#8212; Influencer Booster",
+        "description": "Punto di ingresso: videocorso, community, strategia iniziale, 2 influencer al mese.",
+        "price": "2497",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://socialee.it/pacchetti/",
+        "eligibleDuration": {
+         "@type": "QuantitativeValue",
+         "value": "P3M"
+        },
+        "seller": {
+         "@id": "https://socialee.it/#organization"
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Accelerator &#8212; Lead Machine",
+        "description": "Trasforma la visibilit&#224; in lead: sito orientato alla conversione, funnel, automation di follow-up.",
+        "price": "5497",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://socialee.it/pacchetti/",
+        "eligibleDuration": {
+         "@type": "QuantitativeValue",
+         "value": "P6M"
+        },
+        "seller": {
+         "@id": "https://socialee.it/#organization"
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Elite &#8212; Full Digital Marketing",
+        "description": "Un reparto marketing esterno dedicato: sito, automation avanzate, social, influencer, ADS complete.",
+        "price": "9997",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://socialee.it/pacchetti/",
+        "eligibleDuration": {
+         "@type": "QuantitativeValue",
+         "value": "P12M"
+        },
+        "seller": {
+         "@id": "https://socialee.it/#organization"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3359",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3359",
+  "slug": "pacchetti",
+  "sha": "6021c3914aad"
+ },
+ "/personal-branding/": {
+  "title": "Personal Branding | Socialee.",
+  "description": "Personal branding per founder e professionisti: posizionamento, piano contenuti e presenza su LinkedIn. Percorsi da sei mesi, non da trenta giorni.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/personal-branding/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-personal-branding.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/personal-branding/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/personal-branding/",
+         "name": "Personal Branding"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/personal-branding/#service",
+      "name": "Personal branding per founder e professionisti",
+      "serviceType": "Personal branding per founder e professionisti",
+      "description": "Personal branding per founder e professionisti: posizionamento, piano contenuti e presenza su LinkedIn. Percorsi da sei mesi, non da trenta giorni.",
+      "url": "https://socialee.it/personal-branding/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3353",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3353",
+  "slug": "personal-branding",
+  "sha": "af2242ec06b1"
+ },
+ "/punto-vendita/": {
+  "title": "Servizio: Punto Vendita | Socialee.",
+  "description": "Vetrofanie, insegne, totem e allestimenti per il punto vendita. Ti mostriamo il mockup prima, la grafica va in stampa solo dopo la tua approvazione.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/punto-vendita/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-svc-punto-vendita.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/punto-vendita/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/punto-vendita/",
+         "name": "Servizio: Punto Vendita"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/punto-vendita/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Vi occupate anche della posa?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Consegniamo l'esecutivo pronto e coordiniamo la produzione. Per la posa lavoriamo con installatori sul territorio: se ne avete gi&#224; uno di fiducia gli mandiamo i file, altrimenti ce ne occupiamo noi."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Che differenza c'&#232; tra prespaziato e stampa su pellicola?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Il prespaziato &#232; adesivo tagliato a forma, senza fondo: pulito, elegante, ideale per scritte e loghi. La stampa su pellicola trasparente permette immagini e sfumature, ma si vede la superficie del supporto. La scelta dipende da cosa deve stare in vetrina e da quanta luce entra."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso vedere come verr&#224; prima di stampare?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, ed &#232; il motivo per cui chiediamo sempre una foto della vetrina: il mockup viene fatto sul vostro vetro, con le vostre misure. La grafica va in produzione solo dopo che avete approvato quell'immagine."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Ogni quanto va rifatta una vetrofania?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Se applicata bene dura anni. Si rif&#224; per scelta &#8212; un cambio di promozione, una stagione, un rebranding &#8212; non perch&#233; si consuma. Per gli allestimenti temporanei invece usiamo materiali pensati per essere rimossi senza lasciare residui."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3719",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3719",
+  "slug": "punto-vendita",
+  "sha": "63addd29a144"
+ },
+ "/regia/": {
+  "title": "Servizio: Regia & Clip TV | Socialee.",
+  "description": "Spot, brand film e clip TV seguiti dall'idea alla messa in onda: sceneggiatura, casting, riprese, montaggio e consegna nei formati dell'emittente.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/regia/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/regia-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/regia/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/regia/",
+         "name": "Servizio: Regia &#038; Clip TV"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/regia/#service",
+      "name": "Regia, spot e clip televisive",
+      "serviceType": "Regia, spot e clip televisive",
+      "description": "Spot, brand film e clip TV seguiti dall'idea alla messa in onda: sceneggiatura, casting, riprese, montaggio e consegna nei formati dell'emittente.",
+      "url": "https://socialee.it/regia/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/regia/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto costa uno spot di regia?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Brand film 60-90s: &#8364;15.000-&#8364;40.000. Spot 30s con cast: &#8364;8.000-&#8364;20.000. Serie di clip: &#8364;20.000+. Tutto include pre-produzione, ripresa, post completa, delivery multi-formato."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto serve come anticipo?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Idealmente 6-8 settimane dal brief alla consegna finale. Per progetti urgenti riusciamo a comprimere a 3-4 settimane (con extra rush e meno revisioni)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Lavorate solo in studio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Studio dedicato per shooting controllato, location esterne in tutta Italia, capacit&#224; di gestire produzioni in altri paesi UE per progetti specifici."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I diritti del cast e della musica?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Inclusi: contratti talent (con scope d'uso definito), licenze musica (royalty-free o sync per progetti premium), modelli con consenso scritto. Tutto pulito legalmente."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Possiamo riutilizzare il girato?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Sorgenti grezze incluse nel deliverable. Puoi farne nuovi tagli col tuo team o con noi. Per usi non previsti dal brief originale (es. uso oltre 24 mesi sui talent) si negozia separatamente."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Differenza con i video reel \"normali\"?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Video reel = produzione svelta, smartphone o videomaker, social-first, 2-5 giorni. Regia = produzione cinematografica, troupe, ottica dedicata, cast diretto, 4-8 settimane. Costo e impatto diversi."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso vedere il portfolio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Un selezionato di brand film e spot recenti li mostriamo in call. Alcuni progetti sotto NDA non sono pubblici ma li possiamo discutere in confidenza."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3348",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3348",
+  "slug": "regia",
+  "sha": "fa824a443ff4"
+ },
+ "/servizi/": {
+  "title": "Servizi | Socialee.",
+  "description": "Tutti i servizi Socialee: social media, video, fotografia, brand, siti, advertising, automazioni, materiali offline e ufficio stampa. Un solo interlocutore.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/servizi/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-hero-servizi.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/servizi/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/servizi/",
+         "name": "Servizi"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3362",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3362",
+  "slug": "servizi",
+  "sha": "7eaa05140bb2"
+ },
+ "/siti-app/": {
+  "title": "Siti App | Socialee.",
+  "description": "Sviluppo di web app, PWA e app native iOS e Android: aree riservate, prenotazioni, dashboard su misura e API. Full-stack, mobile first.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/siti-app/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-siti-app_01.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/siti-app/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/siti-app/",
+         "name": "Siti App"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/siti-app/#service",
+      "name": "Sviluppo di web app e app native",
+      "serviceType": "Sviluppo di web app e app native",
+      "description": "Sviluppo di web app, PWA e app native iOS e Android: aree riservate, prenotazioni, dashboard su misura e API. Full-stack, mobile first.",
+      "url": "https://socialee.it/siti-app/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/siti-app/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto costa un'app?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Web app MVP (3-5 funzionalit&#224; core): &#8364;15.000-&#8364;35.000. Native app iOS+Android base: &#8364;25.000-&#8364;60.000. App complessa (multi-tenant, payments, AI): da &#8364;60.000. Always retainer post-launch."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto tempo serve?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "MVP web app: 8-12 settimane. Native app: 12-20 settimane. App complesse multi-funzionalit&#224;: 4-9 mesi. Sempre con sprint settimanali e demo continue."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quale tech stack usate?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Web: Next.js 14, React, TypeScript, Postgres, Redis, Vercel. Mobile: React Native (cross-platform), Swift (iOS native), Kotlin (Android native). Backend: Node.js, Python (FastAPI), Postgres."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Includete il design?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, sempre. UX research, wireframe, design system, prototipo Figma. Design pensato come parte integrante del prodotto, non come decorazione."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa succede dopo il lancio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Pacchetto retainer mensile (&#8364;1.500-&#8364;6.000/mese) per maintenance, hot-fix, nuove feature, ottimizzazione performance. Contratto rinnovabile."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Lavorate solo con startup tech?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Tantissimi nostri progetti sono per brand consumer che vogliono un'app loyalty, e-commerce custom, B2B platform per gestire clienti interni."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Il codice &#232; mio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, sempre. Repository GitHub trasferito al cliente al delivery. Documentazione tecnica completa. Puoi continuare con altri sviluppatori quando vuoi."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3481",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3481",
+  "slug": "siti-app",
+  "sha": "a0800e8b3b5e"
+ },
+ "/siti-comparatori/": {
+  "title": "Siti Comparatori | Socialee.",
+  "description": "Comparatori e aggregatori per finanza, energia, telco e utility: database normalizzato, calcolatori, lead capture e pagine SEO scalabili.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/siti-comparatori/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-siti-comparatori_01.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/siti-comparatori/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/siti-comparatori/",
+         "name": "Siti Comparatori"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/siti-comparatori/#service",
+      "name": "Sviluppo di comparatori e aggregatori",
+      "serviceType": "Sviluppo di comparatori e aggregatori",
+      "description": "Comparatori e aggregatori per finanza, energia, telco e utility: database normalizzato, calcolatori, lead capture e pagine SEO scalabili.",
+      "url": "https://socialee.it/siti-comparatori/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/siti-comparatori/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Per quali settori funziona?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Finanza (mutui, conti, prestiti, assicurazioni), energia (luce, gas), telco (mobile, fibra), assicurazioni, viaggi, servizi B2B (software, gestionali). Ovunque ci siano molti provider e prodotti complessi da confrontare."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto costa?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "MVP comparatore (1 verticale, 5-10 provider): &#8364;35.000-&#8364;75.000. Comparatore enterprise (multi-verticale, 50+ provider): da &#8364;120.000. Sempre incluso retainer post-launch &#8364;3.000-&#8364;8.000/mese."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto serve per lanciare?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "6 mesi minimum per fare bene tutto: strategia + legal + data + frontend + SEO + go-to-market. Tentare in 2-3 mesi significa lanciare un prodotto fragile."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Gestite i contratti con i provider?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No, &#232; il lavoro del cliente (richiede legal e business development specifici per settore). Possiamo fare introduzioni tramite il nostro network e advisory legale."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Il database &#232; mio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Database, codice, infrastruttura sono tutti del cliente. Repository, accessi cloud, documentazione consegnata al delivery."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso scalare a pi&#249; verticali?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, &#232; il vantaggio dell'architettura. Costruito per il primo verticale, l'aggiunta di un secondo costa il 30-50%. Ogni verticale aggiuntivo poi costa progressivamente meno."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa succede se cambia regolamentazione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Per settori regolati (finanza, assicurazioni) lavoriamo con consulenti legali specializzati. Architettura flessibile per adattarsi a cambi normativi (es. Direttiva Mortgage, IVASS)."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3482",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3482",
+  "slug": "siti-comparatori",
+  "sha": "745aaa373ee2"
+ },
+ "/siti-ecommerce/": {
+  "title": "Siti Ecommerce | Socialee.",
+  "description": "E-commerce che convertono: Shopify, WooCommerce o custom. Checkout snello, pagamenti, spedizioni, recupero carrelli e CRM collegato.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/siti-ecommerce/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-siti-ecommerce_01.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/siti-ecommerce/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/siti-ecommerce/",
+         "name": "Siti Ecommerce"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/siti-ecommerce/#service",
+      "name": "Realizzazione di e-commerce",
+      "serviceType": "Realizzazione di e-commerce",
+      "description": "E-commerce che convertono: Shopify, WooCommerce o custom. Checkout snello, pagamenti, spedizioni, recupero carrelli e CRM collegato.",
+      "url": "https://socialee.it/siti-ecommerce/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/siti-ecommerce/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quale piattaforma &#232; meglio?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Shopify per il 70% dei casi: best-in-class per conversion, integrazioni, manutenzione. WooCommerce per chi vuole controllo totale o ha gi&#224; stack WordPress. Custom solo per esigenze specifiche (B2B complesso, marketplace)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto costa?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Shopify D2C standard (20-100 SKU): &#8364;6.500-&#8364;15.000. WooCommerce complesso: &#8364;10.000-&#8364;25.000. Subscription system: +&#8364;3.000-&#8364;8.000. Migrazione da altra piattaforma: +&#8364;2.000-&#8364;6.000."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Funziona anche per B2B?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Shopify Plus o custom per B2B con prezzi visibili solo a clienti loggati, listini multipli, ordini ricorrenti, approval workflow. Mercato sotto-servito in Italia."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Includete il management successivo?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Pacchetto retainer post-launch: &#8364;450-&#8364;1.200/mese (management + CRO + small features). Maggior parte dei clienti resta in retainer per 12+ mesi perch&#233; lo shop continua a evolvere."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "In quanti giorni si vedono primi risultati?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Soft launch settimana 8-9 (test traffic limitato). Full launch settimana 10. Primi insights conversion 30 giorni dopo. Stabilizzazione 90 giorni."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa serve da parte mia?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Catalogo prodotti (foto + descrizioni o brief per produrli), brand guidelines (logo, palette), conto Shopify/Woo, payment gateway attivati, account spedizioniere."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Mi formate il team?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, sempre. 2 sessioni training (gestione prodotti, ordini, marketing automation) + manuale operativo + supporto Slack/email per i primi 30 giorni."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3480",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3480",
+  "slug": "siti-ecommerce",
+  "sha": "8b2afba88036"
+ },
+ "/siti-vetrina/": {
+  "title": "Siti Vetrina | Socialee.",
+  "description": "Siti vetrina per brand, professionisti e B2B: design coerente all'identità, performance ottimizzata e struttura pronta a indicizzarsi su Google.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/siti-vetrina/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-siti-vetrina_01.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/siti-vetrina/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/siti-vetrina/",
+         "name": "Siti Vetrina"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/siti-vetrina/#service",
+      "name": "Realizzazione di siti web vetrina",
+      "serviceType": "Realizzazione di siti web vetrina",
+      "description": "Siti vetrina per brand, professionisti e B2B: design coerente all'identit&#224;, performance ottimizzata e struttura pronta a indicizzarsi su Google.",
+      "url": "https://socialee.it/siti-vetrina/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/siti-vetrina/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto costa un sito vetrina?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Sito 5-7 sezioni con CMS WordPress: &#8364;3.500-&#8364;6.500. Sito complesso (multi-lingua, area login, blog strutturato): &#8364;6.500-&#8364;15.000. Sito custom full-stack: da &#8364;15.000."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quale CMS usate?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "WordPress per la maggior parte dei progetti (flessibile, manutenibile dal cliente). Webflow per progetti dove design ha priorit&#224;. Headless (Next.js + Strapi) per chi vuole performance estreme. Mai Wix."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Mi date il dominio e l'hosting?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Possiamo. Dominio (&#8364;15-30/anno) e hosting performance (&#8364;240-600/anno) gestiti su tuo account o nostro. Trasferiamo a fine progetto se vuoi gestire tu."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso modificare i contenuti dopo?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, sempre. CMS configurato per essere editabile dal cliente con WordPress / Webflow editor. Te lo formiamo in 1 ora durante il delivery."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "&#200; mobile-friendly?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Mobile-first. Disegniamo prima la versione mobile e poi tablet/desktop. Test su tutti i device principali (iPhone, Android, iPad, desktop varie risoluzioni)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Includete SEO?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "SEO tecnico (schema, sitemap, robots, performance, mobile, security) s&#236;, sempre incluso. SEO contenutistico (keyword research, content strategy, backlink) &#232; separato come servizio continuativo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Manutenzione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Pacchetti retainer da &#8364;120/mese (manutenzione base) a &#8364;450/mese (con SEO + content). Include update WordPress/plugin, security, backup, modifiche minori."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3479",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3479",
+  "slug": "siti-vetrina",
+  "sha": "43269e41e267"
+ },
+ "/social-media/": {
+  "title": "Servizio: Social Media | Socialee.",
+  "description": "Gestione profili Instagram e TikTok come se fossero di un creator: piano editoriale sartoriale, contenuti quotidiani e report mensili leggibili.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/social-media/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/social-media-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/social-media/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/social-media/",
+         "name": "Servizio: Social Media"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/social-media/#service",
+      "name": "Gestione social media",
+      "serviceType": "Gestione social media",
+      "description": "Gestione profili Instagram e TikTok come se fossero di un creator: piano editoriale sartoriale, contenuti quotidiani e report mensili leggibili.",
+      "url": "https://socialee.it/social-media/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/social-media/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Cosa intendete con \"gestire la pagina come un influencer\"?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Significa trattare il tuo profilo come se fosse quello di un creator da 100K follower: reel a ritmo alto, presenza di persone, storytelling, trend adaptation, call-to-action conversazionali. I brand account classici hanno reach bassissima; i profili che si comportano come creator vengono spinti dagli algoritmi. &#200; una questione di codice della piattaforma, non di budget."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Perch&#233; l'indicizzazione dei testi &#232; importante?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Perch&#233; i reel non vivono solo nei 48h dell'algoritmo. Ogni giorno milioni di utenti cercano su TikTok \"come fare X\", su Instagram \"migliore prodotto Y\", su Google \"ristoranti zona Z\". Se i tuoi testi sono scritti male, non comparirai mai. Se sono fatti bene, il reel continua a generare visibilit&#224; per mesi. Approfondiamo questo aspetto in digital marketing."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso scegliere solo uno stile di produzione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, ma spesso ha senso mixare. Esempio: un brand premium pu&#242; avere 70% videomaker + 20% regista (per lanci) + 10% social media manager (per immediatezza). Lo definiamo insieme durante la discovery iniziale."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "La marketing automation &#232; inclusa nei pacchetti social?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Nel pacchetto Starter (&#8364;2.497) hai automation base &#8212; form, email di conferma, reminder. Nell'Accelerator (&#8364;5.497) diventa un vero funnel lead con CRM integrato. Nell'Elite (&#8364;9.997) &#232; full-stack con percorsi comportamentali avanzati. Vedi i pacchetti o il servizio marketing automation per i dettagli."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso approvare i contenuti prima della pubblicazione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Sempre. Piano editoriale + storyboard arrivano 5 giorni prima del mese. Contenuti girati ti vengono inviati prima della pubblicazione. Due round di modifiche inclusi per contenuto."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Gestite anche le risposte ai DM e commenti?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236; &#8212; community management entro 24h. Risposta a commenti, DM, domande frequenti, moderazione spam. I lead caldi vengono segnalati al tuo team vendite con contesto."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa succede se il mio brand &#232; tecnico o di nicchia?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Durante la discovery (2 settimane) studiamo il tuo mondo, parliamo con esperti del tuo team, analizziamo competitor. Il nostro metodo adatta il formato creator alla tua sostanza. Risultato: reel divulgativi che sembrano fatti da un insider."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3343",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3343",
+  "slug": "social-media",
+  "sha": "624951ad7dc9"
+ },
+ "/ufficio-stampa/": {
+  "title": "Servizio: Ufficio Stampa | Socialee.",
+  "description": "Ufficio stampa a Foggia: scriviamo il comunicato, costruiamo la lista delle testate e seguiamo l'uscita fino alla pubblicazione. Prima stesura in 48 ore.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/ufficio-stampa/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/09/socialee-svc-ufficio-stampa.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/ufficio-stampa/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/ufficio-stampa/",
+         "name": "Servizio: Ufficio Stampa"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/ufficio-stampa/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quante uscite posso aspettarmi da un comunicato?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "La media sui nostri comunicati &#232; di tre pubblicazioni, ma dipende dalla notizia molto pi&#249; che dal lavoro di diffusione. Un'apertura, un premio o un dato di crescita hanno gambe; un aggiornamento di prodotto senza novit&#224; reali ne ha poche. Se non c'&#232; una notizia ve lo diciamo prima, invece di mandare qualcosa che brucia il rapporto con le redazioni."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Pagate le testate per pubblicare?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Quello &#232; publiredazionale, si chiama cos&#236; e va dichiarato: &#232; uno strumento legittimo ma diverso, e ha un costo a parte. Il nostro lavoro &#232; far uscire il pezzo perch&#233; la redazione lo ritiene interessante, non perch&#233; &#232; stato acquistato."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Serve avere gi&#224; un ufficio stampa interno?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No, anzi: la maggior parte delle aziende con cui lavoriamo non ce l'ha. Se invece esiste gi&#224; una persona che segue la comunicazione, lavoriamo con lei &#8212; conosce l'azienda meglio di noi e noi mettiamo la rete di contatti e il metodo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa vi serve da noi per partire?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Mezz'ora di conversazione con chi sa cosa sta succedendo in azienda, e le foto se ci sono. Il resto lo scriviamo noi e ve lo mandiamo in approvazione: nessun comunicato esce senza il vostro s&#236;."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3716",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3716",
+  "slug": "ufficio-stampa",
+  "sha": "391eb34e19cc"
+ },
+ "/ugc/": {
+  "title": "Servizio: UGC | Socialee.",
+  "description": "Contenuti UGC prodotti da creator esterni a nome del tuo brand: reel autentici pensati per l'advertising, con diritti d'uso inclusi.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/ugc/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/UGC-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/ugc/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/ugc/",
+         "name": "Servizio: UGC"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/ugc/#service",
+      "name": "Produzione di contenuti UGC con creator",
+      "serviceType": "Produzione di contenuti UGC con creator",
+      "description": "Contenuti UGC prodotti da creator esterni a nome del tuo brand: reel autentici pensati per l'advertising, con diritti d'uso inclusi.",
+      "url": "https://socialee.it/ugc/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/ugc/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanto costa un UGC?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Singolo UGC 15-30s: &#8364;350-&#8364;800 a seconda del creator. Pacchetto 6 UGC: &#8364;1.800-&#8364;4.500. Pacchetto continuativo (10/mese): da &#8364;3.500/mese. Include brief, selection, gestione, diritti."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso scegliere io il creator?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Ti proponiamo 3-5 candidati basati sul brief. Tu vedi profilo, contenuti recenti, tono. Approvi quello che pensi calzi. Se nessuno convince, ne proponiamo altri."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I creator possono dire male del mio prodotto?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Lavoriamo solo con creator che hanno provato e apprezzato il prodotto. Mandiamo sample prima di filmare. Se al creator non piace, lo cambiamo prima della produzione (no contenuti negativi)."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso usare UGC anche per la TV / OOH?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Possibile, ma fuori dallo standard. Diritti TV/OOH richiedono contratto e budget aggiuntivo per il creator. Lo discutiamo caso per caso."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cosa succede se al creator scoppia uno scandalo?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Clausola standard nel contratto: in caso di reputazione negativa pubblica, possiamo rimuovere il contenuto entro 24h. &#200; successo poche volte ma siamo coperti."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Differenza con influencer marketing?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "UGC = il creator crea contenuto a tuo nome (lo posti TU). Influencer = il creator posta sulla SUA pagina e tagga te. Logiche diverse, costi diversi, KPI diversi."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Funziona per B2B?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, soprattutto su LinkedIn. Lavoriamo con creator B2B specializzati (founder/operators che parlano del loro lavoro). Stile pi&#249; sobrio, pi&#249; focus su problem-solving che lifestyle."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3458",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3458",
+  "slug": "ugc",
+  "sha": "fc33b925ad34"
+ },
+ "/video-reel/": {
+  "title": "Servizio: Video Reel Professionali | Socialee.",
+  "description": "Reel professionali con script, regia e ottica cinematografica. Formato 9:16, sottotitoli inclusi e riutilizzabili come creatività per le ads.",
+  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://socialee.it/video-reel/",
+  "og_image": "https://socialee.it/wp-content/uploads/2026/04/vide-reel-socialee.webp",
+  "og_type": "article",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://socialee.it/video-reel/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": "1",
+        "item": {
+         "@id": "https://socialee.it",
+         "name": "Home"
+        }
+       },
+       {
+        "@type": "ListItem",
+        "position": "2",
+        "item": {
+         "@id": "https://socialee.it/video-reel/",
+         "name": "Servizio: Video Reel Professionali"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "ProfessionalService"
+      ],
+      "@id": "https://socialee.it/#organization",
+      "name": "Socialee",
+      "alternateName": "Socialee.",
+      "url": "https://socialee.it/",
+      "email": "info@socialee.it",
+      "telephone": "+39 320 979 3774",
+      "description": "Agenzia Tech Creativa: dai reel alla marketing automation. Per PMI, professionisti e scale-up.",
+      "logo": {
+       "@type": "ImageObject",
+       "url": "https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp"
+      },
+      "image": "https://socialee.it/wp-content/uploads/2026/09/socialee-og-default-2026.jpg",
+      "sameAs": [
+       "https://www.instagram.com/socialee.it/"
+      ],
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ],
+      "contactPoint": {
+       "@type": "ContactPoint",
+       "contactType": "sales",
+       "email": "info@socialee.it",
+       "telephone": "+39 320 979 3774",
+       "availableLanguage": [
+        "it"
+       ]
+      },
+      "knowsLanguage": [
+       "it"
+      ]
+     },
+     {
+      "@type": "Service",
+      "@id": "https://socialee.it/video-reel/#service",
+      "name": "Produzione di video reel professionali",
+      "serviceType": "Produzione di video reel professionali",
+      "description": "Reel professionali con script, regia e ottica cinematografica. Formato 9:16, sottotitoli inclusi e riutilizzabili come creativit&#224; per le ads.",
+      "url": "https://socialee.it/video-reel/",
+      "provider": {
+       "@id": "https://socialee.it/#organization"
+      },
+      "areaServed": [
+       {
+        "@type": "City",
+        "name": "Milano"
+       },
+       {
+        "@type": "City",
+        "name": "Roma"
+       },
+       {
+        "@type": "City",
+        "name": "Rimini"
+       },
+       {
+        "@type": "City",
+        "name": "Foggia"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "@id": "https://socialee.it/video-reel/#faq",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Quanti reel girate al mese?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Dipende dal pacchetto: Starter 8 reel/mese, Accelerator 15-18, Elite 20-25 con regia + UGC inclusi. La quantit&#224; &#232; sempre tarata sul ritmo che l'algoritmo della piattaforma richiede."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Su quali piattaforme li ottimizzate?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Instagram, TikTok e Facebook in primis. Stesso formato 9:16 ma copy, hook, sound e indicizzazione cambiano per piattaforma. Forniamo i tre tagli per ogni reel principale."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso scegliere lo stile di produzione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Ti consigliamo per fascia di brand: SMM smartphone per startup e brand local, videomaker per professionisti e D2C, regia per brand premium, UGC quando serve native-feel sui social ads."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Quanto vivono i reel dopo la pubblicazione?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "I reel ben indicizzati continuano a generare visibilit&#224; per settimane. Reel TikTok possono \"rinascere\" anche dopo 3-6 mesi. Su Facebook la distribuzione &#232; pi&#249; lenta ma pi&#249; lunga, e la stessa clip si riusa come creativit&#224; nelle campagne."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Cos'&#232; l'indicizzazione di un reel?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Caption ottimizzata, hashtag tarati, alt text immagine, on-screen text leggibile per OCR algoritmo, sound popolare. Ogni dettaglio aiuta il reel a essere \"scoperto\" da chi non ti segue."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Posso usare i reel anche per le ads?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;, in pacchetti Accelerator+ inclusi. I reel performance li giriamo gi&#224; con hook chirurgico e CTA esplicita, pensati per andare in ADS dopo aver testato organico."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "I diritti dei reel sono miei?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "S&#236;. Tutto quello che giriamo &#232; di tua propriet&#224; al 100%. Sorgenti grezze incluse nel deliverable. Useremo i contenuti pubblicamente solo previo tuo consenso esplicito (es. case study)."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "body_class": [
+   "wp-singular",
+   "page-template-default",
+   "page",
+   "page-id-3345",
+   "wp-custom-logo",
+   "wp-embed-responsive"
+  ],
+  "wp_id": "3345",
+  "slug": "video-reel",
+  "sha": "1bcbd35adcfe"
+ }
+}

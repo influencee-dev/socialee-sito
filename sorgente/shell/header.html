@@ -1,0 +1,341 @@
+<header class="sm-nav"><div class="sm-nav-inner">
+<a aria-label="Socialee — home" class="sm-nav-logo" href="/"><img alt="Socialee — Agenzia Tech Creativa" decoding="async" fetchpriority="high" height="240" src="https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp" width="1380"/></a><nav class="sm-nav-main"><ul>
+<li><a href="/">Home</a></li>
+<li class="has-mega">
+<a class="mega-trigger">Servizi</a><div class="sm-mega sm-mega-4col sm-mega-6col">
+<div class="mega-col">
+<h4>/ Contenuti</h4>
+<ul>
+<li><a href="/communication-strategies/">Communication Strategies</a></li>
+<li><a href="/social-media/">Social Media</a></li>
+<li><a href="/influencer/">Influencer</a></li>
+<li><a href="/ugc/">UGC</a></li>
+</ul>
+</div>
+<div class="mega-col">
+<h4>/ Video &amp; Design</h4>
+<ul>
+<li><a href="/regia/">Regia &amp; Clip TV</a></li>
+<li><a href="/grafica/">Grafica e Design</a></li>
+<li><a href="/video-reel/">Video Reel</a></li>
+<li><a href="/book-fotografici/">Book Fotografici</a></li>
+</ul>
+</div>
+<div class="mega-col">
+<h4>/ Strategies</h4>
+<ul>
+<li><a href="/marketing-automation/">Marketing Automation</a></li>
+<li><a href="/digital-advertising/">Digital Advertising</a></li>
+<li><a href="/growth-hacking/">Growth Hacking <span class="new-pill">NEW</span></a></li>
+<li><a href="/eventi/">Eventi</a></li>
+</ul>
+</div>
+<div class="mega-col">
+<h4>/ Siti</h4>
+<ul>
+<li><a href="/siti-vetrina/">Vetrina</a></li>
+<li><a href="/siti-ecommerce/">Ecommerce</a></li>
+<li><a href="/siti-app/">App</a></li>
+<li><a href="/siti-comparatori/">Comparatori</a></li>
+</ul>
+</div>
+<div class="mega-col">
+<h4>/ Panoramica</h4>
+<ul>
+<li><a href="/servizi/"><strong>Tutti i servizi →</strong></a></li>
+<li><a href="/case-study/">Case study</a></li>
+<li><a href="/pacchetti/">Pacchetti</a></li>
+</ul>
+</div>
+<div class="mega-col">
+<h4>/ Offline &amp; PR</h4>
+<ul>
+<li><a href="/ufficio-stampa/">Ufficio Stampa</a></li>
+<li><a href="/merchandising/">Merchandising</a></li>
+<li><a href="/punto-vendita/">Punto Vendita</a></li>
+<li><a href="/affissioni/">Affissioni &amp; OOH</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="has-mega">
+<a class="mega-trigger">Consulenza</a><div class="sm-mega sm-mega-2col">
+<div class="mega-col">
+<h4>/ Consulenza</h4>
+<ul>
+<li><a href="/personal-branding/">Personal Branding</a></li>
+<li><a href="/marketing-trading/">Marketing &amp; Trading</a></li>
+<li><a href="/digital-media/">Digital Media</a></li>
+</ul>
+</div>
+<div class="mega-side">Sessioni 1:1 e percorsi continuativi. Per founder, brand owner e team che vogliono uno sguardo strategico esterno prima di muovere il budget.</div>
+</div>
+</li>
+<li><a class="ai-link" href="/consulenza-ai/">Consulenza AI <span class="new-pill">NEW</span></a></li>
+<li><a href="/pacchetti/">Pacchetti</a></li>
+<li><a href="/case-study/">Case Study</a></li>
+<li><a href="/chi-siamo/">Chi siamo</a></li>
+<li><a href="/academy/">Academy</a></li>
+</ul></nav><a class="sm-nav-cta" href="/contatti/">Inizia ora →</a><button aria-label="Menu" class="sm-burger"><span></span><span></span><span></span></button>
+</div></header><script id="sm-menu-mobile">(function(){
+var MQ=980;
+function nav(){ return document.getElementById('smNav') || document.querySelector('.sm-nav'); }
+function chiudi(){ var n=nav(); if(!n) return;
+  n.classList.remove('menu-open');
+  n.querySelectorAll('.has-mega.open').forEach(function(li){li.classList.remove('open');});
+  var b=n.querySelector('.sm-burger'); if(b) b.setAttribute('aria-expanded','false');
+  document.documentElement.style.overflow=''; document.body.style.overflow='';
+}
+document.addEventListener('click',function(e){
+  var n=nav(); if(!n) return;
+  var b=e.target.closest('.sm-burger');
+  if(b){ e.preventDefault();
+    var aperto=n.classList.toggle('menu-open');
+    b.setAttribute('aria-expanded', aperto?'true':'false');
+    document.documentElement.style.overflow = aperto?'hidden':'';
+    document.body.style.overflow = aperto?'hidden':'';
+    return; }
+  var t=e.target.closest('#smNav .has-mega > a, .sm-nav .has-mega > a');
+  if(t && window.innerWidth<=MQ){ e.preventDefault();
+    var li=t.parentElement;
+    n.querySelectorAll('.has-mega.open').forEach(function(x){ if(x!==li) x.classList.remove('open'); });
+    li.classList.toggle('open'); return; }
+  var link=e.target.closest('.sm-nav-main a[href]');
+  if(link && n.classList.contains('menu-open')) chiudi();
+});
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') chiudi(); });
+window.addEventListener('resize',function(){ if(window.innerWidth>MQ) chiudi(); });
+var b0=document.querySelector('.sm-burger');
+if(b0){ b0.setAttribute('aria-expanded','false'); b0.setAttribute('aria-controls','smNav'); }
+}());</script>
+<script id="sm-faq-img-script">(function(){
+  function openAll(){
+    document.querySelectorAll('.faq-item details, .faq details').forEach(function(d){ d.open = true; });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', openAll);
+  } else { openAll(); }
+  // Re-run after Elementor frontend init
+  window.addEventListener('load', openAll);
+})();</script><script id="sm-case-carousel-js">(function(){
+  function initCase(){
+    document.querySelectorAll('.case-list').forEach(function(list){
+      var dots = list.parentElement.querySelector('.case-dots');
+      if (!dots) return;
+      var cards = list.querySelectorAll('.case-card-v2');
+      // Rebuild dots based on card count, 1 dot per group-of-visible
+      var visibleCount = 4;
+      if (window.innerWidth <= 900) visibleCount = 2;
+      if (window.innerWidth <= 560) visibleCount = 1;
+      var pageCount = Math.max(1, Math.ceil(cards.length / visibleCount));
+      dots.innerHTML = '';
+      for (var i = 0; i < pageCount; i++) {
+        var d = document.createElement('i');
+        d.className = 'dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('data-idx', i);
+        d.addEventListener('click', function(e){
+          var idx = parseInt(this.getAttribute('data-idx'), 10);
+          var firstCard = cards[idx * visibleCount];
+          if (firstCard) list.scrollTo({ left: firstCard.offsetLeft - list.offsetLeft, behavior: 'smooth' });
+        });
+        dots.appendChild(d);
+      }
+      list.addEventListener('scroll', function(){
+        var scrollLeft = list.scrollLeft;
+        var cardW = cards[0] ? cards[0].offsetWidth + 24 : 300;
+        var idx = Math.round(scrollLeft / (cardW * visibleCount));
+        dots.querySelectorAll('.dot').forEach(function(d, i){
+          d.classList.toggle('active', i === idx);
+        });
+      });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initCase);
+  else initCase();
+  window.addEventListener('load', initCase);
+  window.addEventListener('resize', function(){
+    clearTimeout(window.__caseResize);
+    window.__caseResize = setTimeout(initCase, 150);
+  });
+})();</script><script id="sm-reel-carousel-js">(function(){
+  function initReelCarousels(){
+    document.querySelectorAll('.reel-visual-d').forEach(function(root){
+      var slides = Array.from(root.querySelectorAll('.reel-slide'));
+      if (slides.length < 2) return;
+      if (root.dataset.inited) return;
+      root.dataset.inited = '1';
+      var current = 0;
+      function position(){
+        var total = slides.length;
+        var c = current % total;
+        var l = (current - 1 + total) % total;
+        var r = (current + 1) % total;
+        slides.forEach(function(s, i){
+          s.classList.remove('center','side','hidden');
+          if (i === c) s.classList.add('center');
+          else if (i === l || i === r) s.classList.add('side');
+          else s.classList.add('hidden');
+        });
+        var carousel = root.querySelector('.reel-carousel');
+        [slides[l], slides[c], slides[r]].forEach(function(s){ if (s) carousel.appendChild(s); });
+      }
+      position();
+      var interval = parseInt(root.dataset.interval || '3500', 10);
+      setInterval(function(){ current = (current + 1) % slides.length; position(); }, interval);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initReelCarousels);
+  else initReelCarousels();
+  window.addEventListener('load', initReelCarousels);
+})();</script><script id="sm-reel-d-refine-js">(function(){
+  function refineCarousels(){
+    document.querySelectorAll('.reel-visual-d').forEach(function(root){
+      if (root.dataset.refined) return;
+      root.dataset.refined = '1';
+      // Hijack the position function by re-running it with side-left / side-right
+      var slides = Array.from(root.querySelectorAll('.reel-slide'));
+      if (slides.length < 2) return;
+      var current = 0;
+      var carousel = root.querySelector('.reel-carousel');
+      function position(){
+        var total = slides.length;
+        var c = current % total;
+        var l = (current - 1 + total) % total;
+        var r = (current + 1) % total;
+        slides.forEach(function(s, i){
+          s.classList.remove('center','side','side-left','side-right','hidden');
+          if (i === c) s.classList.add('center');
+          else if (i === l) s.classList.add('side','side-left');
+          else if (i === r) s.classList.add('side','side-right');
+          else s.classList.add('hidden');
+        });
+        // Reorder DOM so left is first, center middle, right last
+        var ordered = [slides[l], slides[c], slides[r]];
+        ordered.forEach(function(s){ if (s) carousel.appendChild(s); });
+      }
+      position();
+      // Disable any prior interval setter from the older script by replacing root data
+      var interval = parseInt(root.dataset.interval || '3500', 10);
+      if (root._reelTimer) clearInterval(root._reelTimer);
+      root._reelTimer = setInterval(function(){
+        current = (current + 1) % slides.length;
+        position();
+      }, interval);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', refineCarousels);
+  else refineCarousels();
+  window.addEventListener('load', refineCarousels);
+})();</script><a class="skip-link" href="#main-content">Vai al contenuto</a><script id="sm-a11y-script">(function(){
+  function tagMain(){
+    var first = document.querySelector('section.hero, section.service-hero, section.hero-centered, section');
+    if (first && !document.getElementById('main-content')) {
+      first.id = 'main-content';
+      first.setAttribute('role','main');
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', tagMain);
+  else tagMain();
+})();</script><script id="sm-perf-js">(function(){function lazy(){document.querySelectorAll("img:not([loading])").forEach(function(i){i.loading="lazy";i.decoding="async";i.setAttribute("fetchpriority","low")});var hero=document.querySelector(".hero img,.hero-portrait img,.service-hero img,.hero-centered img");if(hero){hero.loading="eager";hero.setAttribute("fetchpriority","high")}}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",lazy);else lazy()})();</script>
+
+ <script id="sm-megamenu-final-js">(function(){
+  function init(){
+    var nav=document.querySelector('.sm-nav');
+    if(!nav)return;
+    var triggers=nav.querySelectorAll('.has-mega');
+    if(!triggers.length)return;
+    var timer=null,activeLi=null;
+    function setNavH(){
+      var h=nav.offsetHeight;
+      document.documentElement.style.setProperty('--sm-nav-h',h+'px');
+    }
+    setNavH();
+    window.addEventListener('resize',setNavH);
+    function open(li){
+      clearTimeout(timer);
+      triggers.forEach(function(o){if(o!==li)o.classList.remove('mega-open')});
+      li.classList.add('mega-open');
+      activeLi=li;
+    }
+    function close(){
+      if(activeLi){activeLi.classList.remove('mega-open');activeLi=null}
+    }
+    function scheduleClose(){
+      clearTimeout(timer);
+      timer=setTimeout(close,500);
+    }
+    function cancel(){clearTimeout(timer)}
+    
+    triggers.forEach(function(li){
+      li.addEventListener('mouseenter',function(){open(li)});
+      var mega=li.querySelector('.sm-mega');
+      if(mega){
+        mega.addEventListener('mouseenter',cancel);
+        mega.addEventListener('mouseleave',scheduleClose);
+      }
+      var trig=li.querySelector('.mega-trigger');
+      if(trig){
+        trig.addEventListener('click',function(e){
+          if(window.matchMedia('(max-width:980px)').matches)return;
+          e.preventDefault();
+          if(li.classList.contains('mega-open'))close();
+          else open(li);
+        });
+      }
+    });
+    
+    // Track mouse globally &#8212; close only when mouse is FAR from nav and mega
+    document.addEventListener('mousemove',function(e){
+      if(!activeLi)return;
+      var navRect=nav.getBoundingClientRect();
+      var megaEl=activeLi.querySelector('.sm-mega');
+      var megaRect=megaEl?megaEl.getBoundingClientRect():null;
+      var inNav=e.clientY>=navRect.top-5 && e.clientY<=navRect.bottom+10;
+      var inMega=megaRect && e.clientX>=megaRect.left && e.clientX<=megaRect.right && e.clientY>=megaRect.top-5 && e.clientY<=megaRect.bottom+10;
+      if(inNav||inMega){cancel()}
+      else{scheduleClose()}
+    });
+    
+    document.addEventListener('click',function(e){
+      if(!e.target.closest('.sm-nav')&&!e.target.closest('.sm-mega'))close();
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape')close();
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+  else init();
+})();</script>
+
+
+
+
+
+
+
+
+
+<script id="titoli-autofit">(function(){
+var SEL='.service-hero h1,.service-hero .h-hero,.hero h1,h1.h-hero,h2.h-xl,h2.h-l,.hero-title';
+function adatta(){
+  document.querySelectorAll(SEL).forEach(function(h){
+    h.style.removeProperty('font-size');
+    var largh=h.clientWidth; if(!largh) return;
+    var corpo=parseFloat(getComputedStyle(h).fontSize); if(!corpo) return;
+    h.style.setProperty('overflow-wrap','normal','important');
+    h.style.setProperty('word-break','keep-all','important');
+    var giri=0;
+    while(h.scrollWidth>largh+1 && corpo>18 && giri<60){
+      corpo=corpo*0.97;
+      h.style.setProperty('font-size', corpo.toFixed(2)+'px', 'important');
+      giri++;
+    }
+    h.style.removeProperty('overflow-wrap');
+    h.style.removeProperty('word-break');
+  });
+}
+function avvia(){ adatta(); setTimeout(adatta,400); }
+if(document.fonts && document.fonts.ready) document.fonts.ready.then(avvia); else window.addEventListener('load',avvia);
+window.addEventListener('load',adatta);
+var t; window.addEventListener('resize',function(){ clearTimeout(t); t=setTimeout(adatta,150); });
+}());</script>

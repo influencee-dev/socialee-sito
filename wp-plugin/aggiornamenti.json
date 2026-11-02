@@ -1,0 +1,6 @@
+{
+ "socialee-core": "installa",
+ "socialee-pagine": "installa",
+ "socialee-aggiornamenti": true,
+ "_nota": "true = il sito installa da solo le versioni nuove (Socialee Aggiornamenti, ogni ora). «installa» = lo aggiunge e lo attiva anche se manca."
+}

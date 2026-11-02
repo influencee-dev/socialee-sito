@@ -1,0 +1,25 @@
+{
+ "generato": "2026-11-02T20:41:38+00:00",
+ "plugin": {
+  "socialee-core": {
+   "versione": "1.0.0",
+   "file": "socialee-core.zip",
+   "sha256": "214ee8d2e1ea67e61a5adf19c5387a52e1ca79f3ee6d89bad7daf31344914f76",
+   "auto": true,
+   "installa": true
+  },
+  "socialee-pagine": {
+   "versione": "1.0.0",
+   "file": "socialee-pagine.zip",
+   "sha256": "e715f82a0574be8b903a9a0b4e6ccbe37eb0ff90e2083392e69f58efb60f4b45",
+   "auto": true,
+   "installa": true
+  },
+  "socialee-aggiornamenti": {
+   "versione": "1.0.0",
+   "file": "socialee-aggiornamenti.zip",
+   "sha256": "c878fde5b2bd741eea6497e18a39781cc74bdbfbd225a298a4bd5ba70de1584a",
+   "auto": true
+  }
+ }
+}
