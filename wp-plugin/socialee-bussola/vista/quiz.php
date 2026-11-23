@@ -33,7 +33,7 @@ scb_apri(
 .question:focus{outline:none}
 .options{display:grid;gap:10px}
 .opt{background:#fff;border:2px solid #dcdcdc;border-radius:14px;padding:14px 18px;min-height:56px;display:flex;justify-content:space-between;align-items:center;gap:15px;text-align:left;color:var(--ink);font-weight:600;width:100%}
-.opt:hover{border-color:#E6007E;background:#fff7fb}
+@media(hover:hover){.opt:hover{border-color:#E6007E;background:#fff7fb}}
 .opt[aria-checked=true]{border-color:#D60074;background:#D60074;color:#fff}
 .opt[aria-checked=true]:focus-visible{outline-color:#000}
 .num{display:grid;place-items:center;width:30px;height:30px;border:2px solid #d2d2d2;color:#444;border-radius:9px;flex:none;font-size:13px;font-weight:700}

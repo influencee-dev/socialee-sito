@@ -126,9 +126,29 @@ function scb_apri( $titolo, $extra_css = '', $nav = true, $opz = array() ) {
 	<?php
 }
 
+/**
+ * Lo script esce solo in ASCII: ogni carattere non ASCII diventa \uXXXX. Sul sito vero il plugin dei cookie (iubenda)
+ * rilegge tutta la pagina e scrive «à» come &#224; anche dentro gli script, dove il browser non lo ritraduce.
+ */
+function scb_js_ascii( $js ) {
+	return preg_replace_callback(
+		'/[^\x00-\x7F]/u',
+		function ( $m ) {
+			$c = mb_ord( $m[0], 'UTF-8' );
+			if ( $c > 0xFFFF ) {
+				$c -= 0x10000;
+				return sprintf( '\\u%04x\\u%04x', 0xD800 + ( $c >> 10 ), 0xDC00 + ( $c & 0x3FF ) );
+			}
+			return sprintf( '\\u%04x', $c );
+		},
+		(string) $js
+	);
+}
+
 /** Chiude il documento. $js = script della pagina (con il nonce della CSP). */
 function scb_chiudi( $js = '' ) {
-	$n = esc_attr( scb_nonce() );
+	$n  = esc_attr( scb_nonce() );
+	$js = scb_js_ascii( $js );
 	?>
 </main>
 <footer class="b-foot"><?php echo esc_html( isset( $GLOBALS['scb_piede'] ) ? $GLOBALS['scb_piede'] : 'Socialee · Influencee SRL' ); ?></footer>
