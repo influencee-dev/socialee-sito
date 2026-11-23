@@ -35,7 +35,10 @@ function scb_quale_pagina() {
 	if ( SCB_IMP_PATH === $p ) {
 		return 'imprenditori';
 	}
-	if ( rtrim( SCB_BASE, '/' ) === $p || SCB_BASE . 'dashboard' === $p || rtrim( SCB_IMP_PATH, '/' ) === $p ) {
+	if ( SCB_GUIDE_PATH === $p ) {
+		return 'guide';
+	}
+	if ( rtrim( SCB_BASE, '/' ) === $p || SCB_BASE . 'dashboard' === $p || rtrim( SCB_IMP_PATH, '/' ) === $p || rtrim( SCB_GUIDE_PATH, '/' ) === $p ) {
 		return 'barra';
 	}
 	return null;
@@ -86,12 +89,15 @@ add_action(
 			exit;
 		}
 		require_once SCB_DIR . 'vista/guscio.php';
-		if ( 'imprenditori' === $quale ) { // quiz per imprenditori: pubblico e indicizzabile quando è acceso
+		if ( 'imprenditori' === $quale || 'guide' === $quale ) { // pubbliche e indicizzabili quando sono accese
 			if ( ! SCB_IMP_ATTIVO && ! current_user_can( 'manage_options' ) ) {
-				return; // spento: per gli altri è una pagina che non esiste
+				return; // spente: per gli altri sono pagine che non esistono
 			}
-			scb_intestazioni( 200, SCB_IMP_ATTIVO );
-			require SCB_DIR . 'vista/imprenditori.php';
+			scb_intestazioni( 200, true ); // il modulo deve poter scrivere al sito (connect-src 'self')
+			if ( ! SCB_IMP_ATTIVO ) {
+				header( 'X-Robots-Tag: noindex, nofollow' ); // spenta: la vedono solo gli amministratori
+			}
+			require SCB_DIR . ( 'guide' === $quale ? 'vista/guide.php' : 'vista/imprenditori.php' );
 			exit;
 		}
 		if ( 'quiz' === $quale ) { // il quiz è libero: chiunque abbia il link (decisione della titolare, 23/11/2026)

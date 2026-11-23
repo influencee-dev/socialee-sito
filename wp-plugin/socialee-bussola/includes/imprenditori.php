@@ -81,12 +81,20 @@ function scb_imp_brevo_key() {
 	return defined( 'SOCIALEE_BREVO_KEY' ) ? (string) SOCIALEE_BREVO_KEY : '';
 }
 
-function scb_imp_guida_url( $slug ) {
-	$f = 'guide/trend-social-2027-' . sanitize_key( $slug ) . '.pdf';
-	if ( ! is_readable( SCB_DIR . $f ) ) {
-		$f = 'guide/trend-social-2027-pmi.pdf';
+const SCB_GUIDE_PATH = '/guide-e-risorse/';
+
+/** PDF di una guida (chiave di 'guide') o, senza guida, la pagina con tutte le guide da scegliere. */
+function scb_imp_guida_url( $guida ) {
+	$f = 'guide/calendario-marketing-2027-' . sanitize_key( (string) $guida ) . '.pdf';
+	if ( '' === (string) $guida || ! is_readable( SCB_DIR . $f ) ) {
+		return home_url( SCB_GUIDE_PATH );
 	}
 	return plugins_url( $f, SCB_DIR . 'socialee-bussola.php' );
+}
+
+function scb_imp_guida_titolo( $guida ) {
+	$g = scb_imp_dati()['guide'];
+	return isset( $g[ $guida ] ) ? $g[ $guida ]['titolo'] : 'Calendario marketing 2027';
 }
 
 function scb_imp_brevo( $metodo, $percorso, $corpo = null ) {
@@ -107,13 +115,13 @@ function scb_imp_brevo( $metodo, $percorso, $corpo = null ) {
 
 /** Gli attributi nuovi del quiz, creati in Brevo la prima volta (se ci sono già, Brevo risponde 400 e va bene). */
 function scb_imp_attributi() {
-	if ( '1' === get_option( 'scb_imp_attributi' ) ) {
+	if ( '2' === get_option( 'scb_imp_attributi' ) ) {
 		return;
 	}
-	foreach ( array( 'TIPO_IMPRENDITORE', 'GUIDA_URL', 'QUIZ_PUNTEGGI' ) as $a ) {
+	foreach ( array( 'TIPO_IMPRENDITORE', 'GUIDA_URL', 'GUIDA_TITOLO', 'QUIZ_PUNTEGGI' ) as $a ) {
 		scb_imp_brevo( 'POST', '/contacts/attributes/normal/' . $a, array( 'type' => 'text' ) );
 	}
-	update_option( 'scb_imp_attributi', '1', false );
+	update_option( 'scb_imp_attributi', '2', false );
 }
 
 function scb_imp_errore( $testo, $stato = 400 ) {
@@ -134,7 +142,7 @@ function scb_imp_ricevi( WP_REST_Request $req ) {
 		return trim( mb_substr( sanitize_text_field( (string) $req->get_param( $k ) ), 0, $max ) );
 	};
 	if ( '' !== $f( 'sito_web' ) || (int) $req->get_param( 'ms' ) < 20000 ) {
-		return new WP_REST_Response( array( 'ok' => true, 'guida' => scb_imp_guida_url( 'pmi' ) ), 200 ); // bot: risposta finta
+		return new WP_REST_Response( array( 'ok' => true, 'guida' => scb_imp_guida_url( '' ) ), 200 ); // bot: risposta finta
 	}
 
 	$nome     = $f( 'nome', 60 );
@@ -199,7 +207,7 @@ function scb_imp_ricevi( WP_REST_Request $req ) {
 	foreach ( $io as $k => $v ) {
 		$righe[] = $dim[ $k ]['label'] . ' ' . $v;
 	}
-	$guida = scb_imp_guida_url( $settore['slug'] );
+	$guida = scb_imp_guida_url( $settore['guida'] );
 	$utm   = $f( 'utm', 200 );
 
 	$attr = array(
@@ -212,6 +220,7 @@ function scb_imp_ricevi( WP_REST_Request $req ) {
 		'SOURCE'            => 'Quiz Che tipo di imprenditore sei' . ( $utm ? ' · ' . $utm : '' ),
 		'TIPO_IMPRENDITORE' => $tipo,
 		'GUIDA_URL'         => $guida,
+		'GUIDA_TITOLO'      => $settore['guida'] ? scb_imp_guida_titolo( $settore['guida'] ) : 'Calendario marketing 2027: scegli la guida',
 		'QUIZ_PUNTEGGI'     => implode( ' · ', $righe ),
 	);
 	if ( preg_match( '/^\+393\d{8,9}$/', $tel ) ) {
@@ -255,7 +264,7 @@ function scb_imp_ricevi( WP_REST_Request $req ) {
 	$log[] = array( gmdate( 'c' ), substr( md5( strtolower( $email ) ), 0, 8 ), $settore['slug'], $tipo, $marketing ? 1 : 0, 'ok' === $esito ? 'brevo' : $esito );
 	update_option( 'scb_imp_registro', array_slice( $log, -50 ), false ); // ultime 50, senza dati personali
 
-	return new WP_REST_Response( array( 'ok' => true, 'guida' => $guida, 'settore' => $settore['valore'] ), 200 );
+	return new WP_REST_Response( array( 'ok' => true, 'guida' => $guida, 'settore' => $settore['valore'], 'titolo' => $settore['guida'] ? scb_imp_guida_titolo( $settore['guida'] ) : '' ), 200 );
 }
 
 add_action(

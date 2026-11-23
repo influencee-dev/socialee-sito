@@ -97,7 +97,7 @@ CSS
 		'sotto'       => 'Il test gratuito di Socialee',
 		'robots'      => SCB_IMP_ATTIVO ? 'index,follow' : 'noindex,nofollow',
 		'referrer'    => 'strict-origin-when-cross-origin',
-		'descrizione' => 'Scopri le cinque spinte che guidano le tue scelte da imprenditore e come ti relazioni con clienti e collaboratori. Profilo completo e, in regalo, la guida Trend social 2027 del tuo settore.',
+		'descrizione' => 'Scopri le cinque spinte che guidano le tue scelte da imprenditore e come ti relazioni con clienti e collaboratori. Profilo completo e, in regalo, il Calendario marketing 2027 del tuo settore.',
 		'canonical'   => home_url( SCB_IMP_PATH ),
 		'piede'       => 'Socialee · Influencee SRL · Un test di autoriflessione, non un test psicologico validato.',
 	) : array()
@@ -108,7 +108,7 @@ CSS
 	<span class="chip">Test gratuito per imprenditori</span>
 	<div class="eyebrow">Per titolari, fondatori e liberi professionisti</div>
 	<h1 id="titolo-intro">Che tipo di <em>imprenditore sei?</em></h1>
-	<p class="lead">Esplora le cinque spinte interiori che guidano le tue scelte da imprenditore e le modalità con cui ti relazioni con clienti, collaboratori e soci. Non ci sono risposte giuste o sbagliate: conta la tua esperienza reale. Alla fine ricevi il profilo completo e, in regalo, la guida «Trend social 2027» del tuo settore.</p>
+	<p class="lead">Esplora le cinque spinte interiori che guidano le tue scelte da imprenditore e le modalità con cui ti relazioni con clienti, collaboratori e soci. Non ci sono risposte giuste o sbagliate: conta la tua esperienza reale. Alla fine ricevi il profilo completo e, in regalo, la guida «Calendario marketing 2027» del tuo settore.</p>
 <?php else : ?>
 	<span class="chip">Riflessione personale · v1.1</span>
 	<div class="eyebrow">Un test per capirti meglio</div>
@@ -155,7 +155,7 @@ CSS
 		<div class="velo" aria-hidden="true">Le cinque spinte interiori · gli stati dell'Io · la tua lettura · un esperimento per la prossima settimana · il prompt per leggerlo con l'AI</div>
 	</div>
 	<h2>Ricevi il profilo completo e la guida del tuo settore</h2>
-	<p class="muted">Ti mostriamo subito il profilo completo e ti mandiamo per email la guida «Trend social 2027» del tuo settore. Gratis.</p>
+	<p class="muted">Ti mostriamo subito il profilo completo e ti mandiamo per email la guida «Calendario marketing 2027» del tuo settore: quando sale l'interesse dei clienti, le stagioni da segnare e la checklist mese per mese. Gratis.</p>
 	<form id="modulo" novalidate>
 		<div class="form-grid">
 			<div class="campo"><label for="f-nome">Nome</label><input class="field" id="f-nome" name="nome" autocomplete="given-name" maxlength="60" required></div>
@@ -192,7 +192,7 @@ CSS
 		</div>
 	</div>
 	<div class="guida print-hide" id="box-guida">
-		<p><strong>La tua guida è pronta.</strong> «Trend social 2027» per il settore <span id="nome-settore"></span>: tendenze, cosa fare, le date del 2027 e una checklist. Te l'abbiamo mandata anche per email.</p>
+		<p><strong>La tua guida è pronta.</strong> <span id="testo-guida"></span> Te l'abbiamo mandata anche per email.</p>
 		<a class="btn" id="scarica-guida" href="#" target="_blank" rel="noopener">Scarica la guida (PDF)</a>
 	</div>
 <?php endif; ?>

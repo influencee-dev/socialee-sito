@@ -62,21 +62,33 @@ return array(
 			'consiglio'=> 'Alla prossima richiesta fuori dagli accordi, prova a rispondere con un’alternativa invece che con un sì.',
 		),
 	),
-	// Settori: i 12 di Influencee Trends + «Altro». 'valore' va in Brevo (attributo SETTORE), 'guida' è il PDF regalato.
+	// Le guide regalate: «Calendario marketing 2027» di Influencee Trends (a cura di Giorgia Palazzo), le stesse di
+	// influencee.it/guide-e-risorse/, copiate in guide/ (PDF e copertina). Si aggiornano rimettendo i file nuovi lì.
+	'guide'     => array(
+		'food'            => array( 'nome' => 'Food', 'titolo' => 'Calendario marketing food 2027', 'testo' => 'Quando promuovere panettone, colomba, gelato e gli altri temi del cibo.', 'pagine' => 16 ),
+		'viaggi'          => array( 'nome' => 'Viaggi', 'titolo' => 'Calendario marketing viaggi 2027', 'testo' => 'Sci, mare, Ferragosto, mercatini e Capodanno: quando cercano gli italiani.', 'pagine' => 14 ),
+		'casa'            => array( 'nome' => 'Casa', 'titolo' => 'Calendario marketing casa 2027', 'testo' => 'Condizionatori, giardino, fotovoltaico, Halloween e Natale.', 'pagine' => 12 ),
+		'famiglia'        => array( 'nome' => 'Famiglia', 'titolo' => 'Calendario marketing famiglia 2027', 'testo' => 'Befana, Carnevale, maturità, estate e Babbo Natale.', 'pagine' => 14 ),
+		'sport-benessere' => array( 'nome' => 'Sport e benessere', 'titolo' => 'Calendario marketing sport e benessere 2027', 'testo' => 'Tennis, Giro d’Italia, corsa, piscina, allergie e sauna.', 'pagine' => 12 ),
+		'moda-beauty'     => array( 'nome' => 'Moda e beauty', 'titolo' => 'Calendario marketing moda e beauty 2027', 'testo' => 'Costumi, abbronzatura, Black Friday e le tendenze che crescono.', 'pagine' => 12 ),
+		'tech-mobilita'   => array( 'nome' => 'Tech e mobilità', 'titolo' => 'Calendario marketing tech e mobilità 2027', 'testo' => 'Black Friday, Cyber Monday, gomme invernali e bollo.', 'pagine' => 14 ),
+	),
+	// Settori: i 12 di Influencee Trends + «Altro». 'valore' va in Brevo (attributo SETTORE); 'guida' è la guida
+	// regalata (vuota = nessuna guida del settore: si manda la pagina con tutte le guide, da scegliere).
 	'sectors'   => array(
-		array( 'slug' => 'alimentari-bevande', 'etichetta' => 'Alimentari e bevande (ristorazione, bar, food)', 'valore' => 'Alimentari e bevande' ),
-		array( 'slug' => 'abbigliamento-accessori', 'etichetta' => 'Abbigliamento e accessori', 'valore' => 'Abbigliamento e accessori' ),
-		array( 'slug' => 'cura-persona', 'etichetta' => 'Cura della persona (beauty, parrucchieri, benessere)', 'valore' => 'Cura della persona' ),
-		array( 'slug' => 'salute', 'etichetta' => 'Farmaceutici e salute', 'valore' => 'Farmaceutici e salute' ),
-		array( 'slug' => 'tempo-libero-sport', 'etichetta' => 'Tempo libero e sport', 'valore' => 'Tempo libero e sport' ),
-		array( 'slug' => 'turismo-viaggi', 'etichetta' => 'Turismo e viaggi', 'valore' => 'Turismo e viaggi' ),
-		array( 'slug' => 'casa', 'etichetta' => 'Abitazione e casa', 'valore' => 'Abitazione e casa' ),
-		array( 'slug' => 'auto-veicoli', 'etichetta' => 'Automobili e veicoli', 'valore' => 'Automobili e veicoli' ),
-		array( 'slug' => 'tecnologia', 'etichetta' => 'Informatica e telecomunicazioni', 'valore' => 'Informatica e telecomunicazioni' ),
-		array( 'slug' => 'finanza-assicurazioni', 'etichetta' => 'Finanza e assicurazioni', 'valore' => 'Finanza e assicurazioni' ),
-		array( 'slug' => 'media-editoria', 'etichetta' => 'Media ed editoria', 'valore' => 'Media ed editoria' ),
-		array( 'slug' => 'infanzia', 'etichetta' => 'Giochi e infanzia', 'valore' => 'Giochi e infanzia' ),
-		array( 'slug' => 'pmi', 'etichetta' => 'Altro settore', 'valore' => 'Altro' ),
+		array( 'slug' => 'alimentari-bevande', 'etichetta' => 'Alimentari e bevande (ristorazione, bar, food)', 'valore' => 'Alimentari e bevande', 'guida' => 'food' ),
+		array( 'slug' => 'abbigliamento-accessori', 'etichetta' => 'Abbigliamento e accessori', 'valore' => 'Abbigliamento e accessori', 'guida' => 'moda-beauty' ),
+		array( 'slug' => 'cura-persona', 'etichetta' => 'Cura della persona (beauty, parrucchieri, benessere)', 'valore' => 'Cura della persona', 'guida' => 'moda-beauty' ),
+		array( 'slug' => 'salute', 'etichetta' => 'Farmaceutici e salute', 'valore' => 'Farmaceutici e salute', 'guida' => 'sport-benessere' ),
+		array( 'slug' => 'tempo-libero-sport', 'etichetta' => 'Tempo libero e sport', 'valore' => 'Tempo libero e sport', 'guida' => 'sport-benessere' ),
+		array( 'slug' => 'turismo-viaggi', 'etichetta' => 'Turismo e viaggi', 'valore' => 'Turismo e viaggi', 'guida' => 'viaggi' ),
+		array( 'slug' => 'casa', 'etichetta' => 'Abitazione e casa', 'valore' => 'Abitazione e casa', 'guida' => 'casa' ),
+		array( 'slug' => 'auto-veicoli', 'etichetta' => 'Automobili e veicoli', 'valore' => 'Automobili e veicoli', 'guida' => 'tech-mobilita' ),
+		array( 'slug' => 'tecnologia', 'etichetta' => 'Informatica e telecomunicazioni', 'valore' => 'Informatica e telecomunicazioni', 'guida' => 'tech-mobilita' ),
+		array( 'slug' => 'finanza-assicurazioni', 'etichetta' => 'Finanza e assicurazioni', 'valore' => 'Finanza e assicurazioni', 'guida' => '' ),
+		array( 'slug' => 'media-editoria', 'etichetta' => 'Media ed editoria', 'valore' => 'Media ed editoria', 'guida' => '' ),
+		array( 'slug' => 'infanzia', 'etichetta' => 'Giochi e infanzia', 'valore' => 'Giochi e infanzia', 'guida' => 'famiglia' ),
+		array( 'slug' => 'pmi', 'etichetta' => 'Altro settore', 'valore' => 'Altro', 'guida' => '' ),
 	),
 	// Province e città metropolitane (110, con il riordino della Sardegna del 2025) + chi è all'estero.
 	'province'  => array(

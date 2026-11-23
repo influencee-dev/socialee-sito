@@ -30,6 +30,14 @@ Sito WordPress **socialee.it** (agenzia creativa di Influencee SRL). Stesso sche
   `socialee_bussola_admin` (amministratori). Nel report: prompt per ChatGPT/Gemini e schede da scambiare tra colleghi. Pagina propria senza `wp_head`/`wp_footer`: niente Rank Math,
   pixel, iubenda o statistiche; noindex, no-store, CSP con nonce. Le risposte restano nel localStorage del browser (chiave
   separata per account se loggati); niente server, niente database. NON va nel menu pubblico.
+  Nello stesso plugin, «Che tipo di imprenditore sei?» su `/che-imprenditore-sei/`: stesso quiz e stesso report
+  (vista/quiz.php in modalità imprenditori), poi modulo (nome, cognome, email, telefono, provincia, azienda, settore,
+  privacy, consenso marketing) → `POST /wp-json/socialee-bussola/v1/imprenditore` → contatto Brevo dal server (chiave del
+  modulo contatti) nelle liste «Quiz imprenditori» e, con il consenso e se non è già nell'Academy (lista 47), «Quiz
+  imprenditori · consenso»: le crea il sito. Le guide regalate sono i «Calendario marketing 2027» di Influencee Trends
+  (7 PDF in `guide/`, copiati da influencee.it/guide-e-risorse/), elencate su `/guide-e-risorse/`; mappa settore → guida
+  in `dati/imprenditori.php`. `SCB_IMP_ATTIVO` (includes/imprenditori.php) accende le due pagine per tutti; da spente
+  le vedono solo gli amministratori. Email in Brevo: template 123 (profilo e guida, subito) e «regalo Academy» (giorno 2).
 
 ## Accesso al sito
 - MCP: `POST https://socialee.it/wp-json/socialee-sito/v1/mcp` (JSON-RPC 2.0; `GET` = elenco strumenti):
