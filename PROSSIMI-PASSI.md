@@ -36,3 +36,4 @@
   incollate danno un prompt di team su come comunicare). Tutto nel browser, parte solo al tocco: il sito non vede niente.
   Una bacheca del team salvata sul sito NON c'è: sarebbe raccolta centrale di profili dei lavoratori (serve informativa,
   consenso, tempi di conservazione e un parere legale prima).
+- Bussola 1.0.2: quiz libero senza login (decisione della titolare); dashboard sempre solo per amministratori.

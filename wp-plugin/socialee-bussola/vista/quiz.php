@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 
 $scb_dati = require SCB_DIR . 'dati/questionario.php';
 $scb_conf = array(
-	'storage'   => 'bussola_team_v1_' . scb_impronta_utente(),
+	'storage'   => is_user_logged_in() ? 'bussola_team_v1_' . scb_impronta_utente() : 'bussola_team_v1',
 	'questions' => $scb_dati['questions'],
 	'meta'      => $scb_dati['dimensions'],
 );
@@ -75,7 +75,7 @@ CSS
 	<p class="privacy salvato">Nessuna risposta è trasmessa automaticamente a un server o a Google Drive. Puoi esportare i tuoi dati, condividere un risultato anonimo con il tuo team oppure, dal report, mandare la tua scheda ai colleghi e aprire un prompt in ChatGPT o Gemini: sempre e solo se lo scegli tu.</p>
 	<details>
 		<summary>Privacy di questa pagina</summary>
-		<p class="privacy">La pagina è servita da socialee.it (Influencee SRL) solo agli account del team, dopo l'accesso. Il sito sa che il tuo account ha aperto la pagina, ma non riceve né salva le risposte, i punteggi o il nome del report: il calcolo avviene nel tuo browser e i dati restano nella memoria locale di questo dispositivo, separati per account. Su questa pagina non ci sono statistiche, pixel pubblicitari o cookie di profilazione: solo il cookie tecnico dell'accesso. I bottoni «Apri in ChatGPT/Gemini» mandano il prompt (punteggi, e per il prompt di team i nomi scelti dai colleghi) al servizio scelto, solo quando li tocchi. La partecipazione è volontaria e serve solo all'autoriflessione: i risultati non si usano per valutazioni, performance review o decisioni sul personale. Su un computer condiviso, prima di uscire usa «Elimina i miei dati dal browser».</p>
+		<p class="privacy">La pagina è servita da socialee.it (Influencee SRL) a chi ha il link: non serve un account e non è indicizzata dai motori di ricerca. Il sito non riceve né salva le risposte, i punteggi o il nome del report: il calcolo avviene nel tuo browser e i dati restano nella memoria locale di questo dispositivo. Su questa pagina non ci sono statistiche, pixel pubblicitari o cookie di profilazione: nessun cookie. I bottoni «Apri in ChatGPT/Gemini» mandano il prompt (punteggi, e per il prompt di team i nomi scelti dai colleghi) al servizio scelto, solo quando li tocchi. La partecipazione è volontaria e serve solo all'autoriflessione: i risultati non si usano per valutazioni, performance review o decisioni sul personale. Su un computer condiviso, prima di uscire usa «Elimina i miei dati dal browser».</p>
 	</details>
 </section>
 

@@ -12,7 +12,7 @@ scb_apri(
 <section class="card accedi" aria-labelledby="titolo-accedi">
 	<div class="eyebrow">Solo per il team Socialee</div>
 	<h1 id="titolo-accedi">Area <em>riservata</em></h1>
-	<p class="lead">La Bussola Interna è aperta solo agli account del team. Accedi con il tuo account di socialee.it.</p>
+	<p class="lead">La dashboard degli aggregati è solo per gli amministratori di socialee.it. Il quiz invece è libero: <a href="<?php echo esc_url( home_url( SCB_BASE ) ); ?>">vai al quiz</a>.</p>
 	<?php
 	wp_login_form(
 		array(

@@ -90,7 +90,7 @@ function scb_apri( $titolo, $extra_css = '', $nav = true ) {
 <header class="b-top">
 	<div class="b-marchio">
 		<a class="b-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Socialee — home"><img src="https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp" alt="Socialee" width="1380" height="240"></a>
-		<div class="b-titolo">La Bussola Interna<small>Edizione Team · area riservata</small></div>
+		<div class="b-titolo">La Bussola Interna<small>Edizione Team</small></div>
 	</div>
 	<?php if ( $nav && is_user_logged_in() ) : ?>
 	<nav class="b-nav" aria-label="Bussola">

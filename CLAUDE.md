@@ -25,11 +25,11 @@ Sito WordPress **socialee.it** (agenzia creativa di Influencee SRL). Stesso sche
 - `socialee-bussola` (23/11/2026): «La Bussola Interna — Team Edition» su `/bussola-team/` (quiz, 77 domande) e
   `/bussola-team/dashboard/` (aggregati anonimi, solo amministratori). Sorgente direttamente in `wp-plugin/socialee-bussola/`
   (domande in `dati/questionario.php`, copia di `questionario_sorgente.json` della cartella Drive «SOCIALEE - La Bussola
-  Interna - Team»: contenuti, punteggi e cautele non si cambiano senza la titolare). Accesso controllato dal server col
-  login di WordPress: permesso `socialee_bussola` (ruolo «Team Socialee», amministratori, spunta «Accesso alla Bussola» nel
-  profilo), `socialee_bussola_admin` per la dashboard. Pagina propria senza `wp_head`/`wp_footer`: niente Rank Math,
+  Interna - Team»: contenuti, punteggi e cautele non si cambiano senza la titolare). Il quiz è LIBERO per chi ha il link
+  (decisione della titolare del 23/11/2026: niente login); la dashboard resta dietro il login di WordPress col permesso
+  `socialee_bussola_admin` (amministratori). Nel report: prompt per ChatGPT/Gemini e schede da scambiare tra colleghi. Pagina propria senza `wp_head`/`wp_footer`: niente Rank Math,
   pixel, iubenda o statistiche; noindex, no-store, CSP con nonce. Le risposte restano nel localStorage del browser (chiave
-  separata per account); niente server, niente database. Accessi da *Utenti → Bussola del team*. NON va nel menu pubblico.
+  separata per account se loggati); niente server, niente database. NON va nel menu pubblico.
 
 ## Accesso al sito
 - MCP: `POST https://socialee.it/wp-json/socialee-sito/v1/mcp` (JSON-RPC 2.0; `GET` = elenco strumenti):

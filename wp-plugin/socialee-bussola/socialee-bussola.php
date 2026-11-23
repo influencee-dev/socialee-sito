@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:       Socialee Bussola
- * Description:       «La Bussola Interna — Team Edition» su socialee.it/bussola-team/, solo per gli account del team (ruolo «Team Socialee» o permesso dato dall'amministratore). Le risposte restano nel browser di chi compila: niente server, niente database, niente statistiche né pixel su queste pagine. La dashboard degli aggregati anonimi è solo per gli amministratori.
- * Version:           1.0.1
+ * Description:       «La Bussola Interna — Team Edition» su socialee.it/bussola-team/, libero per chi ha il link (non è nel menu né su Google). Le risposte restano nel browser di chi compila: niente server, niente database, niente statistiche né pixel su queste pagine. La dashboard degli aggregati anonimi è solo per gli amministratori.
+ * Version:           1.0.2
  * Author:            Influencee SRL (Socialee)
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SCB_VERSION', '1.0.1' );
+define( 'SCB_VERSION', '1.0.2' );
 define( 'SCB_DIR', plugin_dir_path( __FILE__ ) );
 
 /** Permessi: chi compila il quiz, chi apre la dashboard degli aggregati. */

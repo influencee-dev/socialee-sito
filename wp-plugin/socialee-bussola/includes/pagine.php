@@ -1,7 +1,7 @@
 <?php
 /**
  * Le due pagine della Bussola, servite dal plugin allo stesso indirizzo anche senza una pagina WordPress:
- *   /bussola-team/            quiz (permesso socialee_bussola)
+ *   /bussola-team/            quiz, libero per chiunque abbia il link (non è nel menu, non è su Google)
  *   /bussola-team/dashboard/  aggregati anonimi (permesso socialee_bussola_admin)
  * Documento HTML proprio, senza wp_head/wp_footer: su queste pagine non arrivano statistiche, pixel, cookie banner
  * né script di altri plugin. Intestazioni: noindex, niente cache, CSP con nonce (nessuna richiesta verso l'esterno
@@ -52,7 +52,7 @@ function scb_intestazioni( $stato ) {
 	if ( ! defined( 'DONOTCACHEPAGE' ) ) {
 		define( 'DONOTCACHEPAGE', true ); // WP-Optimize, W3TC, WP Super Cache
 	}
-	do_action( 'litespeed_control_set_nocache', 'socialee bussola: area riservata' );
+	do_action( 'litespeed_control_set_nocache', 'socialee bussola' );
 	header( 'Cache-Control: no-store, no-cache, must-revalidate, max-age=0, private' );
 	header( 'X-Robots-Tag: noindex, nofollow, noarchive, nosnippet' );
 	header( 'Referrer-Policy: no-referrer' );
@@ -79,19 +79,23 @@ add_action(
 			exit;
 		}
 		require_once SCB_DIR . 'vista/guscio.php';
+		if ( 'quiz' === $quale ) { // il quiz è libero: chiunque abbia il link (decisione della titolare, 23/11/2026)
+			scb_intestazioni( 200 );
+			require SCB_DIR . 'vista/quiz.php';
+			exit;
+		}
 		if ( ! is_user_logged_in() ) {
 			scb_intestazioni( 401 );
 			require SCB_DIR . 'vista/accedi.php';
 			exit;
 		}
-		$ok = 'dashboard' === $quale ? scb_puo_vedere_aggregati() : scb_puo_compilare();
-		if ( ! $ok ) {
+		if ( ! scb_puo_vedere_aggregati() ) {
 			scb_intestazioni( 403 );
 			require SCB_DIR . 'vista/negato.php';
 			exit;
 		}
 		scb_intestazioni( 200 );
-		require SCB_DIR . ( 'dashboard' === $quale ? 'vista/dashboard.php' : 'vista/quiz.php' );
+		require SCB_DIR . 'vista/dashboard.php';
 		exit;
 	},
 	0
