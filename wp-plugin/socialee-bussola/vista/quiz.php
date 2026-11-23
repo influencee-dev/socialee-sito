@@ -53,13 +53,15 @@ details{margin-top:16px}
 summary{cursor:pointer;font-weight:700;min-height:32px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .salvato{margin-top:22px}
+.area{max-width:none;min-height:120px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;line-height:1.5;resize:vertical}
+.etichetta{display:block;font-weight:700;margin:12px 0 6px}
 @media(max-width:650px){.report-grid{grid-template-columns:1fr}.opt{padding:12px 14px}.foot{flex-wrap:wrap}.foot .btn{flex:1}.foot .hint{order:3;width:100%}.actions .btn{flex:1 1 100%}}
 @media print{.print-hide,.actions,#intro,#quiz{display:none!important}.report-top,.bar-fill{print-color-adjust:exact;-webkit-print-color-adjust:exact}.metric-group,.insight{break-inside:avoid}.report-grid{grid-template-columns:1fr 1fr}}
 CSS
 );
 ?>
 <section id="intro" class="card" aria-labelledby="titolo-intro">
-	<span class="chip">Riflessione personale · v1.0</span>
+	<span class="chip">Riflessione personale · v1.1</span>
 	<div class="eyebrow">Un test per capirti meglio</div>
 	<h1 id="titolo-intro">Che cosa ti guida <em>quando lavori con gli altri?</em></h1>
 	<p class="lead">Esplora le tue cinque spinte interiori e le modalità con cui tendi a relazionarti. Non ci sono risposte giuste o sbagliate: conta la tua esperienza reale.</p>
@@ -70,10 +72,10 @@ CSS
 	<input id="personname" class="field" placeholder="Nome o pseudonimo" maxlength="80" autocomplete="off">
 	<label class="check"><input type="checkbox" id="agree"><span>Ho capito che è un esercizio di autoriflessione e che le risposte restano nel browser di questo dispositivo finché non scelgo di esportarle. La partecipazione e l'eventuale condivisione sono volontarie.</span></label>
 	<div class="actions"><button type="button" class="btn" id="start" disabled>Inizia il percorso →</button><button type="button" class="btn ghost hidden" id="resume">Riprendi il test salvato</button></div>
-	<p class="privacy salvato">Nessuna risposta è trasmessa automaticamente a un server o a Google Drive. Puoi esportare i tuoi dati, oppure condividere un risultato anonimo con il tuo team.</p>
+	<p class="privacy salvato">Nessuna risposta è trasmessa automaticamente a un server o a Google Drive. Puoi esportare i tuoi dati, condividere un risultato anonimo con il tuo team oppure, dal report, mandare la tua scheda ai colleghi e aprire un prompt in ChatGPT o Gemini: sempre e solo se lo scegli tu.</p>
 	<details>
 		<summary>Privacy di questa pagina</summary>
-		<p class="privacy">La pagina è servita da socialee.it (Influencee SRL) solo agli account del team, dopo l'accesso. Il sito sa che il tuo account ha aperto la pagina, ma non riceve né salva le risposte, i punteggi o il nome del report: il calcolo avviene nel tuo browser e i dati restano nella memoria locale di questo dispositivo, separati per account. Su questa pagina non ci sono statistiche, pixel pubblicitari o cookie di profilazione: solo il cookie tecnico dell'accesso. La partecipazione è volontaria e serve solo all'autoriflessione: i risultati non si usano per valutazioni, performance review o decisioni sul personale. Su un computer condiviso, prima di uscire usa «Elimina i miei dati dal browser».</p>
+		<p class="privacy">La pagina è servita da socialee.it (Influencee SRL) solo agli account del team, dopo l'accesso. Il sito sa che il tuo account ha aperto la pagina, ma non riceve né salva le risposte, i punteggi o il nome del report: il calcolo avviene nel tuo browser e i dati restano nella memoria locale di questo dispositivo, separati per account. Su questa pagina non ci sono statistiche, pixel pubblicitari o cookie di profilazione: solo il cookie tecnico dell'accesso. I bottoni «Apri in ChatGPT/Gemini» mandano il prompt (punteggi, e per il prompt di team i nomi scelti dai colleghi) al servizio scelto, solo quando li tocchi. La partecipazione è volontaria e serve solo all'autoriflessione: i risultati non si usano per valutazioni, performance review o decisioni sul personale. Su un computer condiviso, prima di uscire usa «Elimina i miei dati dal browser».</p>
 	</details>
 </section>
 
@@ -94,6 +96,38 @@ CSS
 	<div class="section"><h2>2. Gli stati dell'Io</h2><p class="muted">Modalità di risposta che possono attivarsi in situazioni diverse. La scala «Bambino Ribelle» è separata ed esplorativa, non un sesto fattore dell'ESQ-R-I.</p><div class="metric-group"><div class="scores" id="egoScores"></div></div></div>
 	<div class="section"><h2>3. La tua lettura</h2><div class="report-grid" id="insights"></div></div>
 	<div class="section"><h2>4. Un esperimento per la prossima settimana</h2><div class="insight" id="experiment"></div></div>
+	<div class="section print-hide" id="ai">
+		<h2>5. Fatti aiutare a leggerlo</h2>
+		<p class="muted">Qui sotto c'è un prompt già compilato con i tuoi punteggi. Aprilo in ChatGPT o in Gemini per avere una lettura su come comunichi e collabori, con consigli per te e per chi lavora con te. Puoi modificarlo prima di inviarlo.</p>
+		<div class="notice">Il prompt contiene solo i punteggi delle 11 dimensioni: niente nome, niente risposte alle singole domande. Quando lo apri, il testo va al servizio che scegli (OpenAI o Google), con il tuo account e le sue regole sulla privacy: fallo solo se vuoi. Il sito non riceve niente.</div>
+		<label for="promptMio" class="etichetta">Il tuo prompt</label>
+		<textarea id="promptMio" class="field area" rows="9" spellcheck="false"></textarea>
+		<div class="actions"><button type="button" class="btn" data-ai="chatgpt" data-fonte="promptMio">Apri in ChatGPT ↗</button><button type="button" class="btn secondary" data-ai="gemini" data-fonte="promptMio">Apri in Gemini ↗</button><button type="button" class="btn ghost" data-ai="copia" data-fonte="promptMio">Copia il prompt</button></div>
+		<p class="privacy" id="avvisoAi" aria-live="polite"></p>
+	</div>
+	<div class="section print-hide" id="team">
+		<h2>6. Confrontati con il team</h2>
+		<p class="muted">La Bussola serve soprattutto a capire come comunicare meglio tra voi. Scambiatevi le schede con i colleghi che vogliono farlo: incollando le loro qui sotto ottieni un prompt per leggere insieme come collaborare, chi ha bisogno di cosa e quali accordi di comunicazione prendere.</p>
+		<h3>La tua scheda da condividere</h3>
+		<label for="nomeTeam" class="etichetta">Il nome con cui ti presenti ai colleghi</label>
+		<input id="nomeTeam" class="field" maxlength="40" autocomplete="off" placeholder="Nome">
+		<div class="spazio"></div>
+		<textarea id="schedaMia" class="field area" rows="6" readonly aria-label="La tua scheda da condividere"></textarea>
+		<div class="actions"><button type="button" class="btn" id="condividiScheda">Condividi la scheda</button><button type="button" class="btn ghost" id="copiaScheda">Copia la scheda</button></div>
+		<p class="privacy">La scheda contiene il nome che scegli e i punteggi, non le risposte. Mandala solo a chi vuoi, per esempio nel gruppo del team; chi la riceve non la inoltra ad altri. Il sito non la vede.</p>
+		<div class="divider"></div>
+		<h3>Le schede dei colleghi</h3>
+		<label for="schedeColleghi" class="etichetta">Incolla qui le schede che ti hanno mandato (anche tutte insieme)</label>
+		<textarea id="schedeColleghi" class="field area" rows="6" spellcheck="false" placeholder="Incolla qui…"></textarea>
+		<p class="privacy" id="riconosciute" aria-live="polite">Nessuna scheda incollata.</p>
+		<div id="bloccoTeam" class="hidden">
+			<label for="promptTeam" class="etichetta">Prompt per il team</label>
+			<textarea id="promptTeam" class="field area" rows="9" spellcheck="false"></textarea>
+			<div class="actions"><button type="button" class="btn" data-ai="chatgpt" data-fonte="promptTeam">Apri in ChatGPT ↗</button><button type="button" class="btn secondary" data-ai="gemini" data-fonte="promptTeam">Apri in Gemini ↗</button><button type="button" class="btn ghost" data-ai="copia" data-fonte="promptTeam">Copia il prompt</button></div>
+			<p class="privacy" id="avvisoTeam" aria-live="polite"></p>
+		</div>
+		<p class="privacy">Le schede incollate restano solo in questa pagina e spariscono quando la chiudi. Il prompt per il team contiene i nomi e i punteggi di chi ti ha mandato la scheda: usalo solo se loro sono d'accordo.</p>
+	</div>
 	<p class="privacy">Interpretazioni indicative, non valutazioni professionali. I punteggi sono trasformati linearmente in scala 0–100 dal valore medio di risposte 1–5 (tenendo conto delle domande invertite). Il contesto e l'autopercezione influenzano i risultati.</p>
 	<div class="divider"></div>
 	<h3>Esporta solo quello che vuoi condividere</h3>

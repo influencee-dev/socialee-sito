@@ -30,3 +30,9 @@
   iPhone/Android/desktop senza scroll orizzontale, nessuna richiesta esterna oltre a caratteri e logo.
 - Titolare: creare gli account dei collaboratori con ruolo «Team Socialee» (Utenti → Aggiungi nuovo) o spuntare
   «Accesso alla Bussola» nel profilo di chi c'è già. Elenco in Utenti → Bussola del team.
+- Bussola 1.0.1: nel report «Fatti aiutare a leggerlo» (prompt già compilato coi punteggi, senza nome né risposte;
+  «Apri in ChatGPT» con il prompt nell'indirizzo, «Apri in Gemini» lo copia e apre Gemini, che non accetta testo
+  nell'indirizzo) e «Confrontati con il team» (scheda con nome scelto e punteggi da mandare ai colleghi, le loro schede
+  incollate danno un prompt di team su come comunicare). Tutto nel browser, parte solo al tocco: il sito non vede niente.
+  Una bacheca del team salvata sul sito NON c'è: sarebbe raccolta centrale di profili dei lavoratori (serve informativa,
+  consenso, tempi di conservazione e un parere legale prima).
