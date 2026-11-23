@@ -20,9 +20,6 @@ const SCB_CAP_ADMIN = 'socialee_bussola_admin';
 const SCB_RUOLO     = 'socialee_team';
 const SCB_RUOLI_V   = '1';
 
-/** Liste Brevo del quiz per imprenditori (account Influencee/Socialee): tutti, e chi ha dato il consenso marketing. */
-const SCB_IMP_LISTA_TUTTI    = 0;
-const SCB_IMP_LISTA_CONSENSO = 0;
 
 require_once SCB_DIR . 'includes/accesso.php';
 require_once SCB_DIR . 'includes/pagine.php';

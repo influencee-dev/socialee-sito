@@ -12,6 +12,8 @@
 defined( 'ABSPATH' ) || exit;
 
 const SCB_IMP_PATH = '/che-imprenditore-sei/';
+/** Pagina accesa per tutti? Finché è false la vedono solo gli amministratori (per le prove) e non è indicizzata. */
+const SCB_IMP_ATTIVO = false;
 
 function scb_imp_dati() {
 	static $d = null;
@@ -21,11 +23,56 @@ function scb_imp_dati() {
 	return $d;
 }
 
-/** Liste Brevo (id). Si cambiano con il filtro scb_imp_liste o con l'opzione scb_imp_liste. */
+/** Nomi delle liste Brevo del quiz (cartella 1, la stessa di «Academy Imprenditori»). */
+const SCB_IMP_NOMI_LISTE = array( 'tutti' => 'Quiz imprenditori', 'consenso' => 'Quiz imprenditori · consenso' );
+/** Lista dell'Academy: chi c'è già non riceve il regalo dell'Academy (ha già la sua sequenza). */
+const SCB_IMP_LISTA_ACADEMY = 47;
+
+/** Liste Brevo (id): create dal sito alla prima occasione e salvate nell'opzione scb_imp_liste. */
 function scb_imp_liste() {
 	$o = get_option( 'scb_imp_liste', array() );
-	return (array) apply_filters( 'scb_imp_liste', wp_parse_args( is_array( $o ) ? $o : array(), array( 'tutti' => SCB_IMP_LISTA_TUTTI, 'consenso' => SCB_IMP_LISTA_CONSENSO ) ) );
+	return (array) apply_filters( 'scb_imp_liste', wp_parse_args( is_array( $o ) ? $o : array(), array( 'tutti' => 0, 'consenso' => 0 ) ) );
 }
+
+/** Cerca le liste per nome e crea quelle che mancano (una prova all'ora se Brevo non risponde o manca la chiave). */
+function scb_imp_prepara_liste() {
+	$l = scb_imp_liste();
+	if ( ( $l['tutti'] && $l['consenso'] ) || ! scb_imp_brevo_key() || get_transient( 'scb_imp_liste_prova' ) ) {
+		return;
+	}
+	set_transient( 'scb_imp_liste_prova', 1, HOUR_IN_SECONDS );
+	$trovate = array();
+	for ( $off = 0; $off < 250; $off += 50 ) {
+		list( $c, $b ) = scb_imp_brevo( 'GET', '/contacts/lists?limit=50&offset=' . $off );
+		$j = json_decode( $b, true );
+		if ( 200 !== $c || empty( $j['lists'] ) ) {
+			break;
+		}
+		foreach ( $j['lists'] as $x ) {
+			$trovate[ (string) $x['name'] ] = (int) $x['id'];
+		}
+		if ( count( $j['lists'] ) < 50 ) {
+			break;
+		}
+	}
+	foreach ( SCB_IMP_NOMI_LISTE as $k => $nome ) {
+		if ( ! empty( $l[ $k ] ) ) {
+			continue;
+		}
+		if ( isset( $trovate[ $nome ] ) ) {
+			$l[ $k ] = $trovate[ $nome ];
+			continue;
+		}
+		list( $c, $b ) = scb_imp_brevo( 'POST', '/contacts/lists', array( 'name' => $nome, 'folderId' => 1 ) );
+		$j = json_decode( $b, true );
+		if ( $c >= 200 && $c < 300 && ! empty( $j['id'] ) ) {
+			$l[ $k ] = (int) $j['id'];
+		}
+	}
+	update_option( 'scb_imp_liste', array( 'tutti' => (int) $l['tutti'], 'consenso' => (int) $l['consenso'] ), false );
+	scb_imp_attributi();
+}
+add_action( 'init', 'scb_imp_prepara_liste', 20 );
 
 function scb_imp_brevo_key() {
 	if ( function_exists( 'scl_brevo_key' ) ) {
@@ -174,11 +221,22 @@ function scb_imp_ricevi( WP_REST_Request $req ) {
 		$attr['OPT_IN']     = true;
 		$attr['OPTIN_TIME'] = gmdate( 'Y-m-d' );
 	}
-	$liste = scb_imp_liste();
-	$ids   = array_values( array_filter( array( (int) $liste['tutti'], $marketing ? (int) $liste['consenso'] : 0 ) ) );
-
 	$esito = 'non inviato a Brevo';
-	if ( scb_imp_brevo_key() && $ids ) {
+	scb_imp_prepara_liste();
+	$liste = scb_imp_liste();
+	$ids   = array();
+	if ( scb_imp_brevo_key() && $liste['tutti'] ) {
+		$ids = array( (int) $liste['tutti'] );
+		if ( $marketing && $liste['consenso'] ) {
+			// chi è già iscritto all'Academy non riceve il «regalo» dell'Academy: ha già la sua sequenza
+			list( $c, $b ) = scb_imp_brevo( 'GET', '/contacts/' . rawurlencode( $email ) );
+			$gia           = ( 200 === $c ) ? (array) ( json_decode( $b, true )['listIds'] ?? array() ) : array();
+			if ( ! in_array( SCB_IMP_LISTA_ACADEMY, array_map( 'intval', $gia ), true ) ) {
+				$ids[] = (int) $liste['consenso'];
+			}
+		}
+	}
+	if ( $ids ) {
 		scb_imp_attributi();
 		list( $codice, $corpo ) = scb_imp_brevo( 'POST', '/contacts', array( 'email' => $email, 'attributes' => $attr, 'listIds' => $ids, 'updateEnabled' => true ) );
 		if ( $codice >= 400 && false !== strpos( $corpo, 'SMS' ) ) { // numero rifiutato: riprovo senza

@@ -86,8 +86,11 @@ add_action(
 			exit;
 		}
 		require_once SCB_DIR . 'vista/guscio.php';
-		if ( 'imprenditori' === $quale ) { // quiz per imprenditori: pubblico e indicizzabile
-			scb_intestazioni( 200, true );
+		if ( 'imprenditori' === $quale ) { // quiz per imprenditori: pubblico e indicizzabile quando è acceso
+			if ( ! SCB_IMP_ATTIVO && ! current_user_can( 'manage_options' ) ) {
+				return; // spento: per gli altri è una pagina che non esiste
+			}
+			scb_intestazioni( 200, SCB_IMP_ATTIVO );
 			require SCB_DIR . 'vista/imprenditori.php';
 			exit;
 		}

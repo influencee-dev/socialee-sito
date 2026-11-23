@@ -95,7 +95,7 @@ CSS
 	$scb_imp ? array(
 		'etichetta'   => 'Che tipo di imprenditore sei?',
 		'sotto'       => 'Il test gratuito di Socialee',
-		'robots'      => 'index,follow',
+		'robots'      => SCB_IMP_ATTIVO ? 'index,follow' : 'noindex,nofollow',
 		'referrer'    => 'strict-origin-when-cross-origin',
 		'descrizione' => 'Scopri le cinque spinte che guidano le tue scelte da imprenditore e come ti relazioni con clienti e collaboratori. Profilo completo e, in regalo, la guida Trend social 2027 del tuo settore.',
 		'canonical'   => home_url( SCB_IMP_PATH ),
