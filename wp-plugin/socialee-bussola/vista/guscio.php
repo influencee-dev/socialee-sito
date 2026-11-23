@@ -69,17 +69,34 @@ CSS;
 }
 
 /** Apre il documento. $extra_css = stile della singola pagina. */
-function scb_apri( $titolo, $extra_css = '', $nav = true ) {
-	$n = esc_attr( scb_nonce() );
+function scb_apri( $titolo, $extra_css = '', $nav = true, $opz = array() ) {
+	$n   = esc_attr( scb_nonce() );
+	$opz = wp_parse_args(
+		$opz,
+		array( 'etichetta' => 'La Bussola Interna', 'sotto' => 'Edizione Team', 'robots' => 'noindex,nofollow,noarchive,nosnippet', 'referrer' => 'no-referrer', 'descrizione' => '', 'canonical' => '', 'piede' => 'Socialee · Influencee SRL · La Bussola Interna è un prototipo per percorsi formativi volontari, non adatto a decisioni sul personale.' )
+	);
+	$GLOBALS['scb_piede'] = $opz['piede'];
 	?><!doctype html>
 <html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
-<meta name="referrer" content="no-referrer">
+<meta name="robots" content="<?php echo esc_attr( $opz['robots'] ); ?>">
+<meta name="referrer" content="<?php echo esc_attr( $opz['referrer'] ); ?>">
+<?php if ( $opz['descrizione'] ) : ?>
+<meta name="description" content="<?php echo esc_attr( $opz['descrizione'] ); ?>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="<?php echo esc_attr( $titolo ); ?>">
+<meta property="og:description" content="<?php echo esc_attr( $opz['descrizione'] ); ?>">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Socialee">
+<?php endif; ?>
+<?php if ( $opz['canonical'] ) : ?>
+<link rel="canonical" href="<?php echo esc_url( $opz['canonical'] ); ?>">
+<meta property="og:url" content="<?php echo esc_url( $opz['canonical'] ); ?>">
+<?php endif; ?>
 <meta name="color-scheme" content="light">
-<title><?php echo esc_html( $titolo ); ?> · Socialee</title>
+<title><?php echo esc_html( false !== strpos( $titolo, 'Socialee' ) ? $titolo : $titolo . ' · Socialee' ); ?></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" nonce="<?php echo $n; // phpcs:ignore WordPress.Security.EscapeOutput ?>" href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap">
@@ -90,7 +107,7 @@ function scb_apri( $titolo, $extra_css = '', $nav = true ) {
 <header class="b-top">
 	<div class="b-marchio">
 		<a class="b-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Socialee — home"><img src="https://socialee.it/wp-content/uploads/2026/09/socialee-logo.webp" alt="Socialee" width="1380" height="240"></a>
-		<div class="b-titolo">La Bussola Interna<small>Edizione Team</small></div>
+		<div class="b-titolo"><?php echo esc_html( $opz['etichetta'] ); ?><small><?php echo esc_html( $opz['sotto'] ); ?></small></div>
 	</div>
 	<?php if ( $nav && is_user_logged_in() ) : ?>
 	<nav class="b-nav" aria-label="Bussola">
@@ -114,7 +131,7 @@ function scb_chiudi( $js = '' ) {
 	$n = esc_attr( scb_nonce() );
 	?>
 </main>
-<footer class="b-foot">Socialee · Influencee SRL · La Bussola Interna è un prototipo per percorsi formativi volontari, non adatto a decisioni sul personale.</footer>
+<footer class="b-foot"><?php echo esc_html( isset( $GLOBALS['scb_piede'] ) ? $GLOBALS['scb_piede'] : 'Socialee · Influencee SRL' ); ?></footer>
 	<?php if ( $js ) : ?>
 <script nonce="<?php echo $n; // phpcs:ignore WordPress.Security.EscapeOutput ?>">
 <?php echo $js; // phpcs:ignore WordPress.Security.EscapeOutput -- script nostro ?>

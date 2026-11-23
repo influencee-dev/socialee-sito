@@ -32,7 +32,10 @@ function scb_quale_pagina() {
 	if ( SCB_BASE . 'dashboard/' === $p ) {
 		return 'dashboard';
 	}
-	if ( rtrim( SCB_BASE, '/' ) === $p || SCB_BASE . 'dashboard' === $p ) {
+	if ( SCB_IMP_PATH === $p ) {
+		return 'imprenditori';
+	}
+	if ( rtrim( SCB_BASE, '/' ) === $p || SCB_BASE . 'dashboard' === $p || rtrim( SCB_IMP_PATH, '/' ) === $p ) {
 		return 'barra';
 	}
 	return null;
@@ -46,7 +49,7 @@ function scb_nonce() {
 	return $n;
 }
 
-function scb_intestazioni( $stato ) {
+function scb_intestazioni( $stato, $pubblica = false ) {
 	status_header( $stato );
 	nocache_headers();
 	if ( ! defined( 'DONOTCACHEPAGE' ) ) {
@@ -54,15 +57,19 @@ function scb_intestazioni( $stato ) {
 	}
 	do_action( 'litespeed_control_set_nocache', 'socialee bussola' );
 	header( 'Cache-Control: no-store, no-cache, must-revalidate, max-age=0, private' );
-	header( 'X-Robots-Tag: noindex, nofollow, noarchive, nosnippet' );
-	header( 'Referrer-Policy: no-referrer' );
+	if ( $pubblica ) { // pagina da trovare su Google (quiz per imprenditori)
+		header( 'Referrer-Policy: strict-origin-when-cross-origin' );
+	} else {
+		header( 'X-Robots-Tag: noindex, nofollow, noarchive, nosnippet' );
+		header( 'Referrer-Policy: no-referrer' );
+	}
 	header( 'X-Frame-Options: DENY' );
 	header( 'X-Content-Type-Options: nosniff' );
 	header( 'Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()' );
 	$n = scb_nonce();
 	header(
 		"Content-Security-Policy: default-src 'none'; script-src 'nonce-{$n}'; style-src 'nonce-{$n}' https://fonts.googleapis.com; " .
-		"font-src https://fonts.gstatic.com; img-src 'self' https://socialee.it data:; connect-src 'none'; " .
+		"font-src https://fonts.gstatic.com; img-src 'self' https://socialee.it data:; connect-src " . ( $pubblica ? "'self'" : "'none'" ) . '; ' .
 		"form-action 'self'; base-uri 'none'; frame-ancestors 'none'"
 	);
 }
@@ -79,6 +86,11 @@ add_action(
 			exit;
 		}
 		require_once SCB_DIR . 'vista/guscio.php';
+		if ( 'imprenditori' === $quale ) { // quiz per imprenditori: pubblico e indicizzabile
+			scb_intestazioni( 200, true );
+			require SCB_DIR . 'vista/imprenditori.php';
+			exit;
+		}
 		if ( 'quiz' === $quale ) { // il quiz è libero: chiunque abbia il link (decisione della titolare, 23/11/2026)
 			scb_intestazioni( 200 );
 			require SCB_DIR . 'vista/quiz.php';

@@ -7,14 +7,23 @@
 defined( 'ABSPATH' ) || exit;
 
 $scb_dati = require SCB_DIR . 'dati/questionario.php';
+// Stessa pagina, due usi: la Bussola del team e «Che tipo di imprenditore sei?» (stesso quiz, poi il modulo).
+$scb_imp  = ! empty( $GLOBALS['scb_imprenditori'] );
 $scb_conf = array(
-	'storage'   => is_user_logged_in() ? 'bussola_team_v1_' . scb_impronta_utente() : 'bussola_team_v1',
+	'storage'   => $scb_imp ? 'socialee_imprenditore_v1' : ( is_user_logged_in() ? 'bussola_team_v1_' . scb_impronta_utente() : 'bussola_team_v1' ),
 	'questions' => $scb_dati['questions'],
 	'meta'      => $scb_dati['dimensions'],
+	'imp'       => $scb_imp,
 );
+if ( $scb_imp ) {
+	$scb_d               = scb_imp_dati();
+	$scb_conf['types']   = $scb_d['types'];
+	$scb_conf['endpoint'] = rest_url( 'socialee-bussola/v1/imprenditore' );
+}
+$scb_privacy = 'https://www.iubenda.com/privacy-policy/31252963';
 
 scb_apri(
-	'La Bussola Interna — Test per il team',
+	$scb_imp ? 'Che tipo di imprenditore sei? Il test gratuito di Socialee' : 'La Bussola Interna — Test per il team',
 	<<<'CSS'
 .chip{padding:7px 12px;background:var(--fucsia-tenue);border-radius:999px;color:var(--fucsia-testo);font-size:12px;font-weight:700;display:inline-block;margin-bottom:18px}
 .progress-top{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px;font-weight:700;font-size:13px}
@@ -55,28 +64,75 @@ summary{cursor:pointer;font-weight:700;min-height:32px}
 .salvato{margin-top:22px}
 .area{max-width:none;min-height:120px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;line-height:1.5;resize:vertical}
 .etichetta{display:block;font-weight:700;margin:12px 0 6px}
-@media(max-width:650px){.report-grid{grid-template-columns:1fr}.opt{padding:12px 14px}.foot{flex-wrap:wrap}.foot .btn{flex:1}.foot .hint{order:3;width:100%}.actions .btn{flex:1 1 100%}}
-@media print{.print-hide,.actions,#intro,#quiz{display:none!important}.report-top,.bar-fill{print-color-adjust:exact;-webkit-print-color-adjust:exact}.metric-group,.insight{break-inside:avoid}.report-grid{grid-template-columns:1fr 1fr}}
+.anteprima{background:#000;color:#fff;border-radius:18px;padding:clamp(22px,4vw,34px);margin-bottom:24px;border-bottom:6px solid #E6007E}
+.anteprima .eyebrow,.tipo-box .eyebrow{color:#ff7ab8}
+.anteprima h2{font-size:clamp(30px,6vw,54px);margin:8px 0 10px}
+.anteprima p{color:#e6e6e6;margin:0}
+.velo{margin:18px 0 0;padding:16px;border-radius:14px;background:#141414;color:#8a8a8a;font-size:14px;filter:blur(2.5px);user-select:none}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.form-grid .intera{grid-column:1/-1}
+.campo label{display:block;font-weight:700;margin-bottom:6px;font-size:15px}
+.campo .field{max-width:none}
+select.field{appearance:auto}
+.form-errore{color:#a3002f;font-size:14px;font-weight:600;margin-top:12px}
+.field[aria-invalid=true]{border-color:#a3002f}
+.consensi .check{margin-top:12px;font-size:14px}
+.trappola{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.tipo-box{background:#000;color:#fff;border-radius:18px;padding:clamp(22px,4vw,34px);margin-bottom:22px}
+.tipo-box h2{font-size:clamp(28px,5vw,46px);margin:8px 0 6px}
+.tipo-box .motto{font-size:19px;font-weight:700;color:#ff7ab8;margin-bottom:10px}
+.tipo-box p{color:#e8e8e8}
+.tipo-box .report-grid{margin-top:16px}
+.tipo-box .insight{background:#161616;color:#f0f0f0}
+.tipo-box .tag{color:#ff7ab8}
+.guida{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--fucsia-tenue);border-left:4px solid #E6007E;border-radius:14px;padding:18px 20px;margin:0 0 26px}
+.guida p{margin:0;max-width:560px}
+@media(max-width:650px){.form-grid{grid-template-columns:1fr}.guida .btn{width:100%}.report-grid{grid-template-columns:1fr}.opt{padding:12px 14px}.foot{flex-wrap:wrap}.foot .btn{flex:1}.foot .hint{order:3;width:100%}.actions .btn{flex:1 1 100%}}
+@media print{.print-hide,.actions,#intro,#quiz,#esito{display:none!important}.report-top,.bar-fill{print-color-adjust:exact;-webkit-print-color-adjust:exact}.metric-group,.insight{break-inside:avoid}.report-grid{grid-template-columns:1fr 1fr}}
 CSS
+	,
+	true,
+	$scb_imp ? array(
+		'etichetta'   => 'Che tipo di imprenditore sei?',
+		'sotto'       => 'Il test gratuito di Socialee',
+		'robots'      => 'index,follow',
+		'referrer'    => 'strict-origin-when-cross-origin',
+		'descrizione' => 'Scopri le cinque spinte che guidano le tue scelte da imprenditore e come ti relazioni con clienti e collaboratori. Profilo completo e, in regalo, la guida Trend social 2027 del tuo settore.',
+		'canonical'   => home_url( SCB_IMP_PATH ),
+		'piede'       => 'Socialee · Influencee SRL · Un test di autoriflessione, non un test psicologico validato.',
+	) : array()
 );
 ?>
 <section id="intro" class="card" aria-labelledby="titolo-intro">
+<?php if ( $scb_imp ) : ?>
+	<span class="chip">Test gratuito per imprenditori</span>
+	<div class="eyebrow">Per titolari, fondatori e liberi professionisti</div>
+	<h1 id="titolo-intro">Che tipo di <em>imprenditore sei?</em></h1>
+	<p class="lead">Esplora le cinque spinte interiori che guidano le tue scelte da imprenditore e le modalità con cui ti relazioni con clienti, collaboratori e soci. Non ci sono risposte giuste o sbagliate: conta la tua esperienza reale. Alla fine ricevi il profilo completo e, in regalo, la guida «Trend social 2027» del tuo settore.</p>
+<?php else : ?>
 	<span class="chip">Riflessione personale · v1.1</span>
 	<div class="eyebrow">Un test per capirti meglio</div>
 	<h1 id="titolo-intro">Che cosa ti guida <em>quando lavori con gli altri?</em></h1>
 	<p class="lead">Esplora le tue cinque spinte interiori e le modalità con cui tendi a relazionarti. Non ci sono risposte giuste o sbagliate: conta la tua esperienza reale.</p>
+<?php endif; ?>
 	<div class="grid"><div class="stat"><strong>77</strong><span>affermazioni originali</span></div><div class="stat"><strong>~15–20'</strong><span>durata indicativa</span></div><div class="stat"><strong>11</strong><span>dimensioni esplorate</span></div></div>
 	<div class="notice"><strong>Un punto importante.</strong> Questo è uno strumento esplorativo ispirato all'Analisi Transazionale, non un questionario psicometrico validato, una diagnosi o un test per la selezione/valutazione del personale. I risultati non dicono chi sei «davvero» e possono cambiare con il contesto.</div>
+	<div class="<?php echo $scb_imp ? 'hidden' : ''; ?>">
 	<label for="personname"><strong>Come vuoi essere chiamato nel tuo report?</strong> <span class="muted">(facoltativo)</span></label>
 	<div class="spazio"></div>
 	<input id="personname" class="field" placeholder="Nome o pseudonimo" maxlength="80" autocomplete="off">
+	</div>
 	<label class="check"><input type="checkbox" id="agree"><span>Ho capito che è un esercizio di autoriflessione e che le risposte restano nel browser di questo dispositivo finché non scelgo di esportarle. La partecipazione e l'eventuale condivisione sono volontarie.</span></label>
 	<div class="actions"><button type="button" class="btn" id="start" disabled>Inizia il percorso →</button><button type="button" class="btn ghost hidden" id="resume">Riprendi il test salvato</button></div>
+<?php if ( $scb_imp ) : ?>
+	<p class="privacy salvato">Le risposte alle singole affermazioni restano nel tuo browser. Alla fine, con il modulo, ci mandi solo i tuoi dati di contatto e i punteggi finali, per ricevere il profilo e la guida. <a href="<?php echo esc_url( $scb_privacy ); ?>" target="_blank" rel="noopener">Informativa privacy</a>.</p>
+<?php else : ?>
 	<p class="privacy salvato">Nessuna risposta è trasmessa automaticamente a un server o a Google Drive. Puoi esportare i tuoi dati, condividere un risultato anonimo con il tuo team oppure, dal report, mandare la tua scheda ai colleghi e aprire un prompt in ChatGPT o Gemini: sempre e solo se lo scegli tu.</p>
 	<details>
 		<summary>Privacy di questa pagina</summary>
 		<p class="privacy">La pagina è servita da socialee.it (Influencee SRL) a chi ha il link: non serve un account e non è indicizzata dai motori di ricerca. Il sito non riceve né salva le risposte, i punteggi o il nome del report: il calcolo avviene nel tuo browser e i dati restano nella memoria locale di questo dispositivo. Su questa pagina non ci sono statistiche, pixel pubblicitari o cookie di profilazione: nessun cookie. I bottoni «Apri in ChatGPT/Gemini» mandano il prompt (punteggi, e per il prompt di team i nomi scelti dai colleghi) al servizio scelto, solo quando li tocchi. La partecipazione è volontaria e serve solo all'autoriflessione: i risultati non si usano per valutazioni, performance review o decisioni sul personale. Su un computer condiviso, prima di uscire usa «Elimina i miei dati dal browser».</p>
 	</details>
+<?php endif; ?>
 </section>
 
 <section id="quiz" class="card hidden" aria-labelledby="question">
@@ -90,8 +146,56 @@ CSS
 	<div class="actions"><button type="button" class="btn ghost" id="saveprogress">Salva avanzamento</button><button type="button" class="btn danger" id="reset">Cancella risposte</button></div>
 </section>
 
+<?php if ( $scb_imp ) : ?>
+<section id="esito" class="card hidden" aria-labelledby="tipo-anteprima">
+	<div class="anteprima">
+		<div class="eyebrow">Il tuo profilo è pronto</div>
+		<h2 id="tipo-anteprima" tabindex="-1"></h2>
+		<p id="motto-anteprima"></p>
+		<div class="velo" aria-hidden="true">Le cinque spinte interiori · gli stati dell'Io · la tua lettura · un esperimento per la prossima settimana · il prompt per leggerlo con l'AI</div>
+	</div>
+	<h2>Ricevi il profilo completo e la guida del tuo settore</h2>
+	<p class="muted">Ti mostriamo subito il profilo completo e ti mandiamo per email la guida «Trend social 2027» del tuo settore. Gratis.</p>
+	<form id="modulo" novalidate>
+		<div class="form-grid">
+			<div class="campo"><label for="f-nome">Nome</label><input class="field" id="f-nome" name="nome" autocomplete="given-name" maxlength="60" required></div>
+			<div class="campo"><label for="f-cognome">Cognome</label><input class="field" id="f-cognome" name="cognome" autocomplete="family-name" maxlength="60" required></div>
+			<div class="campo"><label for="f-email">Email</label><input class="field" id="f-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120" required></div>
+			<div class="campo"><label for="f-telefono">Telefono</label><input class="field" id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="es. 333 123 4567" required></div>
+			<div class="campo"><label for="f-provincia">Provincia</label><select class="field" id="f-provincia" name="provincia" required><option value="">Scegli la provincia</option><?php foreach ( $scb_d['province'] as $scb_p ) : ?><option><?php echo esc_html( $scb_p ); ?></option><?php endforeach; ?></select></div>
+			<div class="campo"><label for="f-azienda">Nome dell'azienda</label><input class="field" id="f-azienda" name="azienda" autocomplete="organization" maxlength="120" required></div>
+			<div class="campo intera"><label for="f-settore">Settore</label><select class="field" id="f-settore" name="settore" required><option value="">Scegli il settore</option><?php foreach ( $scb_d['sectors'] as $scb_s ) : ?><option value="<?php echo esc_attr( $scb_s['slug'] ); ?>"><?php echo esc_html( $scb_s['etichetta'] ); ?></option><?php endforeach; ?></select></div>
+		</div>
+		<div class="trappola" aria-hidden="true"><label for="f-sito">Non compilare</label><input id="f-sito" name="sito_web" tabindex="-1" autocomplete="off"></div>
+		<div class="consensi">
+			<label class="check"><input type="checkbox" id="f-privacy" name="privacy" required><span>Ho letto l'<a href="<?php echo esc_url( $scb_privacy ); ?>" target="_blank" rel="noopener">informativa privacy</a> e voglio ricevere il profilo e la guida per email. <span class="muted">(obbligatorio)</span></span></label>
+			<label class="check"><input type="checkbox" id="f-marketing" name="marketing"><span>Sì, voglio ricevere da Socialee altri regali e consigli per imprenditori, come l'accesso all'Academy. Posso disiscrivermi quando voglio. <span class="muted">(facoltativo)</span></span></label>
+		</div>
+		<p class="form-errore" id="errore-form" role="alert" aria-live="assertive"></p>
+		<div class="actions"><button type="submit" class="btn" id="invia">Mostrami il profilo completo →</button></div>
+		<p class="privacy">Titolare del trattamento: Influencee SRL (Socialee). Usiamo i tuoi dati per mandarti il profilo e la guida e, solo se lo scegli, per altri contenuti. Le risposte alle singole affermazioni restano nel tuo browser: ci arrivano solo i punteggi finali.</p>
+	</form>
+</section>
+<?php endif; ?>
+
 <section id="report" class="card hidden" aria-labelledby="reportTitle">
 	<div class="report-top"><div class="eyebrow">Profilo personale · report orientativo</div><h1 id="reportTitle" tabindex="-1">La tua bussola</h1><p id="reportDate"></p><div class="nota">Questi punteggi non sono percentili o misure cliniche: esprimono soltanto la frequenza delle risposte su scale costruite per questo prototipo.</div></div>
+<?php if ( $scb_imp ) : ?>
+	<div class="tipo-box" id="tipo-box">
+		<div class="eyebrow">Che tipo di imprenditore sei</div>
+		<h2 id="tipo-nome"></h2>
+		<div class="motto" id="tipo-motto"></div>
+		<p id="tipo-ritratto"></p>
+		<div class="report-grid">
+			<div class="insight"><div class="tag">Il tuo punto di forza</div><p id="tipo-forza"></p></div>
+			<div class="insight"><div class="tag">Tu e i social</div><p id="tipo-social"></p></div>
+		</div>
+	</div>
+	<div class="guida print-hide" id="box-guida">
+		<p><strong>La tua guida è pronta.</strong> «Trend social 2027» per il settore <span id="nome-settore"></span>: tendenze, cosa fare, le date del 2027 e una checklist. Te l'abbiamo mandata anche per email.</p>
+		<a class="btn" id="scarica-guida" href="#" target="_blank" rel="noopener">Scarica la guida (PDF)</a>
+	</div>
+<?php endif; ?>
 	<div class="section"><h2>1. Le cinque spinte interiori</h2><p class="muted">Come riconosci i tuoi automatismi quando affronti responsabilità e pressione.</p><div class="metric-group"><div class="scores" id="driverScores"></div></div></div>
 	<div class="section"><h2>2. Gli stati dell'Io</h2><p class="muted">Modalità di risposta che possono attivarsi in situazioni diverse. La scala «Bambino Ribelle» è separata ed esplorativa, non un sesto fattore dell'ESQ-R-I.</p><div class="metric-group"><div class="scores" id="egoScores"></div></div></div>
 	<div class="section"><h2>3. La tua lettura</h2><div class="report-grid" id="insights"></div></div>
@@ -105,6 +209,7 @@ CSS
 		<div class="actions"><button type="button" class="btn" data-ai="chatgpt" data-fonte="promptMio">Apri in ChatGPT ↗</button><button type="button" class="btn secondary" data-ai="gemini" data-fonte="promptMio">Apri in Gemini ↗</button><button type="button" class="btn ghost" data-ai="copia" data-fonte="promptMio">Copia il prompt</button></div>
 		<p class="privacy" id="avvisoAi" aria-live="polite"></p>
 	</div>
+<?php if ( ! $scb_imp ) : ?>
 	<div class="section print-hide" id="team">
 		<h2>6. Confrontati con il team</h2>
 		<p class="muted">La Bussola serve soprattutto a capire come comunicare meglio tra voi. Scambiatevi le schede con i colleghi che vogliono farlo: incollando le loro qui sotto ottieni un prompt per leggere insieme come collaborare, chi ha bisogno di cosa e quali accordi di comunicazione prendere.</p>
@@ -128,11 +233,12 @@ CSS
 		</div>
 		<p class="privacy">Le schede incollate restano solo in questa pagina e spariscono quando la chiudi. Il prompt per il team contiene i nomi e i punteggi di chi ti ha mandato la scheda: usalo solo se loro sono d'accordo.</p>
 	</div>
+<?php endif; ?>
 	<p class="privacy">Interpretazioni indicative, non valutazioni professionali. I punteggi sono trasformati linearmente in scala 0–100 dal valore medio di risposte 1–5 (tenendo conto delle domande invertite). Il contesto e l'autopercezione influenzano i risultati.</p>
 	<div class="divider"></div>
 	<h3>Esporta solo quello che vuoi condividere</h3>
-	<p class="muted">Il report completo e le risposte possono rimanere privati. Per un riepilogo collettivo usa soltanto l'esportazione anonima, senza nome e senza risposte ai singoli item.</p>
-	<div class="actions print-hide"><button type="button" class="btn" id="print">Stampa / salva PDF</button><button type="button" class="btn secondary" id="anon">Esporta per aggregato team (JSON anonimo)</button><button type="button" class="btn ghost" id="personal">Scarica archivio personale (JSON)</button><button type="button" class="btn ghost" id="copy">Copia sintesi</button><button type="button" class="btn danger" id="delete">Elimina i miei dati dal browser</button></div>
+	<p class="muted"><?php echo $scb_imp ? 'Il report completo e le risposte restano nel tuo browser: salvalo in PDF o copialo per riguardarlo con calma.' : 'Il report completo e le risposte possono rimanere privati. Per un riepilogo collettivo usa soltanto l\'esportazione anonima, senza nome e senza risposte ai singoli item.'; ?></p>
+	<div class="actions print-hide"><button type="button" class="btn" id="print">Stampa / salva PDF</button><?php if ( ! $scb_imp ) : ?><button type="button" class="btn secondary" id="anon">Esporta per aggregato team (JSON anonimo)</button><?php endif; ?><button type="button" class="btn ghost" id="personal">Scarica archivio personale (JSON)</button><button type="button" class="btn ghost" id="copy">Copia sintesi</button><button type="button" class="btn danger" id="delete">Elimina i miei dati dal browser</button></div>
 	<details class="print-hide"><summary>Come viene calcolato il punteggio?</summary><p class="privacy">Ogni affermazione riceve da 1 a 5 punti; alcuni item sono invertiti. Per ogni dimensione viene calcolata la media: (media−1)×25. In questo prototipo, un punteggio più alto significa soltanto maggiore accordo con le affermazioni relative alla dimensione. Le 11 dimensioni non sono direttamente comparabili come tratti psicometrici validati.</p></details>
 </section>
 <?php
