@@ -9,7 +9,8 @@ Sito WordPress **socialee.it** (agenzia creativa di Influencee SRL). Stesso sche
 - **Si modifica `sorgente/`** (pagine, `shell/header.html`, `shell/footer.html`, `css/sito.css`, `css/kit.css`), mai
   le copie generate in `wp-plugin/socialee-pagine/{pages,shell,assets}`.
 - Build: `python3 -I scripts/build.py` → zip in `dist/` e `consegne/plugin-wordpress/` + `versioni.json`.
-- **Pubblicare** = alzare `Version` del plugin cambiato, build, commit e push su `main`. Il plugin
+- **Pubblicare** = alzare `Version` del plugin cambiato (un plugin nuovo va anche in `socu_famiglia()` di Aggiornamenti e
+  in `PLUGINS` di build.py: arriva dopo due giri, prima Aggiornamenti poi il plugin), build, commit e push su `main`. Il plugin
   **Socialee Aggiornamenti** sul sito legge `consegne/plugin-wordpress/versioni.json` (raw GitHub) ogni ora e installa
   da solo (copia di sicurezza, ritorno indietro se la home non risponde). `wp-plugin/aggiornamenti.json` decide quali.
 
@@ -21,6 +22,14 @@ Sito WordPress **socialee.it** (agenzia creativa di Influencee SRL). Stesso sche
   da `wp_head`/`wp_footer`. `?socialee_originale=1` (da loggati) mostra la pagina com'era.
 - `socialee-pagine`: il contenuto (31 pagine).
 - `socialee-aggiornamenti`: aggiornamenti automatici dal repository.
+- `socialee-bussola` (23/11/2026): «La Bussola Interna — Team Edition» su `/bussola-team/` (quiz, 77 domande) e
+  `/bussola-team/dashboard/` (aggregati anonimi, solo amministratori). Sorgente direttamente in `wp-plugin/socialee-bussola/`
+  (domande in `dati/questionario.php`, copia di `questionario_sorgente.json` della cartella Drive «SOCIALEE - La Bussola
+  Interna - Team»: contenuti, punteggi e cautele non si cambiano senza la titolare). Accesso controllato dal server col
+  login di WordPress: permesso `socialee_bussola` (ruolo «Team Socialee», amministratori, spunta «Accesso alla Bussola» nel
+  profilo), `socialee_bussola_admin` per la dashboard. Pagina propria senza `wp_head`/`wp_footer`: niente Rank Math,
+  pixel, iubenda o statistiche; noindex, no-store, CSP con nonce. Le risposte restano nel localStorage del browser (chiave
+  separata per account); niente server, niente database. Accessi da *Utenti → Bussola del team*. NON va nel menu pubblico.
 
 ## Accesso al sito
 - MCP: `POST https://socialee.it/wp-json/socialee-sito/v1/mcp` (JSON-RPC 2.0; `GET` = elenco strumenti):

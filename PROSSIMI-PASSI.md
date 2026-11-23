@@ -22,3 +22,11 @@
 3. Spegnere Elementor Pro, poi Elementor (la shell si accende da sola), svuotare la cache, ricontrollare tutto.
    Disattivare anche il vecchio bridge `claude/v1` ed Elementor MCP Composer. Eliminare solo dopo 30 giorni e con l'ok.
 4. Dopo: CSS ripulito dalle regole non usate (oggi 131 KB, molte correzioni con `!important`), font in locale.
+
+## Bussola del team (23/11/2026)
+- Socialee Bussola 1.0.0 e Socialee Aggiornamenti 1.0.1 (riconosce il plugin nuovo). Collaudo su WordPress locale:
+  anonimo 401 con modulo di accesso, account senza permesso 403, team 200, dashboard solo amministratori; punteggi uguali
+  a un calcolo indipendente (domande invertite comprese), ripresa, cancellazione, esportazioni, stampa/PDF, tastiera,
+  iPhone/Android/desktop senza scroll orizzontale, nessuna richiesta esterna oltre a caratteri e logo.
+- Titolare: creare gli account dei collaboratori con ruolo «Team Socialee» (Utenti → Aggiungi nuovo) o spuntare
+  «Accesso alla Bussola» nel profilo di chi c'è già. Elenco in Utenti → Bussola del team.

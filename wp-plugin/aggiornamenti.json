@@ -2,5 +2,6 @@
  "socialee-core": "installa",
  "socialee-pagine": "installa",
  "socialee-aggiornamenti": true,
+ "socialee-bussola": "installa",
  "_nota": "true = il sito installa da solo le versioni nuove (Socialee Aggiornamenti, ogni ora). «installa» = lo aggiunge e lo attiva anche se manca."
 }

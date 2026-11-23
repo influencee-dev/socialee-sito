@@ -21,7 +21,7 @@ SRC = os.path.join(ROOT, 'sorgente')
 WP = os.path.join(ROOT, 'wp-plugin')
 DIST = os.path.join(ROOT, 'dist')
 CONS = os.path.join(ROOT, 'consegne', 'plugin-wordpress')
-PLUGINS = ['socialee-core', 'socialee-pagine', 'socialee-aggiornamenti']
+PLUGINS = ['socialee-core', 'socialee-pagine', 'socialee-aggiornamenti', 'socialee-bussola']
 
 
 def minify_css(css):

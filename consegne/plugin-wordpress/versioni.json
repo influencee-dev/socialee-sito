@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-02T21:01:55+00:00",
+ "generato": "2026-11-23T20:35:34+00:00",
  "plugin": {
   "socialee-core": {
    "versione": "1.0.1",
@@ -16,10 +16,17 @@
    "installa": true
   },
   "socialee-aggiornamenti": {
-   "versione": "1.0.0",
+   "versione": "1.0.1",
    "file": "socialee-aggiornamenti.zip",
-   "sha256": "c878fde5b2bd741eea6497e18a39781cc74bdbfbd225a298a4bd5ba70de1584a",
+   "sha256": "1dff9aa5be66fcffa27993b896086911abeaa2d57779f702b4a98d3d2054580d",
    "auto": true
+  },
+  "socialee-bussola": {
+   "versione": "1.0.0",
+   "file": "socialee-bussola.zip",
+   "sha256": "a05a974d3b6f8a0fb2a923b4f6534a9d6510e2228a0d0eecbfd916b6eb3dcc84",
+   "auto": true,
+   "installa": true
   }
  }
 }
