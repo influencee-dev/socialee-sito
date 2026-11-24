@@ -99,7 +99,7 @@ CSS
 		'referrer'    => 'strict-origin-when-cross-origin',
 		'descrizione' => 'Scopri le cinque spinte che guidano le tue scelte da imprenditore e come ti relazioni con clienti e collaboratori. Profilo completo e, in regalo, il Calendario marketing 2027 del tuo settore.',
 		'canonical'   => home_url( SCB_IMP_PATH ),
-		'piede'       => 'Socialee · Influencee SRL · Un test di autoriflessione, non un test psicologico validato.',
+		'piede'       => 'Socialee · Partidea SRL · Un test di autoriflessione, non un test psicologico validato.',
 	) : array()
 );
 ?>
@@ -130,7 +130,7 @@ CSS
 	<p class="privacy salvato">Nessuna risposta è trasmessa automaticamente a un server o a Google Drive. Puoi esportare i tuoi dati, condividere un risultato anonimo con il tuo team oppure, dal report, mandare la tua scheda ai colleghi e aprire un prompt in ChatGPT o Gemini: sempre e solo se lo scegli tu.</p>
 	<details>
 		<summary>Privacy di questa pagina</summary>
-		<p class="privacy">La pagina è servita da socialee.it (Influencee SRL) a chi ha il link: non serve un account e non è indicizzata dai motori di ricerca. Il sito non riceve né salva le risposte, i punteggi o il nome del report: il calcolo avviene nel tuo browser e i dati restano nella memoria locale di questo dispositivo. Su questa pagina non ci sono statistiche, pixel pubblicitari o cookie di profilazione: nessun cookie. I bottoni «Apri in ChatGPT/Gemini» mandano il prompt (punteggi, e per il prompt di team i nomi scelti dai colleghi) al servizio scelto, solo quando li tocchi. La partecipazione è volontaria e serve solo all'autoriflessione: i risultati non si usano per valutazioni, performance review o decisioni sul personale. Su un computer condiviso, prima di uscire usa «Elimina i miei dati dal browser».</p>
+		<p class="privacy">La pagina è servita da socialee.it (Partidea SRL) a chi ha il link: non serve un account e non è indicizzata dai motori di ricerca. Il sito non riceve né salva le risposte, i punteggi o il nome del report: il calcolo avviene nel tuo browser e i dati restano nella memoria locale di questo dispositivo. Su questa pagina non ci sono statistiche, pixel pubblicitari o cookie di profilazione: nessun cookie. I bottoni «Apri in ChatGPT/Gemini» mandano il prompt (punteggi, e per il prompt di team i nomi scelti dai colleghi) al servizio scelto, solo quando li tocchi. La partecipazione è volontaria e serve solo all'autoriflessione: i risultati non si usano per valutazioni, performance review o decisioni sul personale. Su un computer condiviso, prima di uscire usa «Elimina i miei dati dal browser».</p>
 	</details>
 <?php endif; ?>
 </section>
@@ -173,7 +173,7 @@ CSS
 		</div>
 		<p class="form-errore" id="errore-form" role="alert" aria-live="assertive"></p>
 		<div class="actions"><button type="submit" class="btn" id="invia">Mostrami il profilo completo →</button></div>
-		<p class="privacy">Titolare del trattamento: Influencee SRL (Socialee). Usiamo i tuoi dati per mandarti il profilo e la guida e, solo se lo scegli, per altri contenuti. Le risposte alle singole affermazioni restano nel tuo browser: ci arrivano solo i punteggi finali.</p>
+		<p class="privacy">Titolare del trattamento: Partidea SRL (Socialee). Usiamo i tuoi dati per mandarti il profilo e la guida e, solo se lo scegli, per altri contenuti. Le risposte alle singole affermazioni restano nel tuo browser: ci arrivano solo i punteggi finali.</p>
 	</form>
 </section>
 <?php endif; ?>

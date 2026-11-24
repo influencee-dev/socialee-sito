@@ -37,7 +37,8 @@ Sito WordPress **socialee.it** (agenzia creativa di Influencee SRL). Stesso sche
   imprenditori · consenso»: le crea il sito. Le guide regalate sono i «Calendario marketing 2027» di Influencee Trends
   (7 PDF in `guide/`, copiati da influencee.it/guide-e-risorse/), elencate su `/guide-e-risorse/`; mappa settore → guida
   in `dati/imprenditori.php`. `SCB_IMP_ATTIVO` (includes/imprenditori.php) accende le due pagine per tutti; da spente
-  le vedono solo gli amministratori. Email in Brevo: template 123 (profilo e guida, subito) e «regalo Academy» (giorno 2).
+  le vedono solo gli amministratori (accese dal 24/11/2026). Brevo: liste 60 e 61, automazioni 29 (email subito, template 128)
+  e 30 (dopo 2 giorni, template 129), attive dal 24/11/2026. Titolare nei testi: Partidea SRL (Socialee è un suo brand).
 
 ## Accesso al sito
 - MCP: `POST https://socialee.it/wp-json/socialee-sito/v1/mcp` (JSON-RPC 2.0; `GET` = elenco strumenti):

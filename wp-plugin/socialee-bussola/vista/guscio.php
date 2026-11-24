@@ -73,7 +73,7 @@ function scb_apri( $titolo, $extra_css = '', $nav = true, $opz = array() ) {
 	$n   = esc_attr( scb_nonce() );
 	$opz = wp_parse_args(
 		$opz,
-		array( 'etichetta' => 'La Bussola Interna', 'sotto' => 'Edizione Team', 'robots' => 'noindex,nofollow,noarchive,nosnippet', 'referrer' => 'no-referrer', 'descrizione' => '', 'canonical' => '', 'piede' => 'Socialee · Influencee SRL · La Bussola Interna è un prototipo per percorsi formativi volontari, non adatto a decisioni sul personale.' )
+		array( 'etichetta' => 'La Bussola Interna', 'sotto' => 'Edizione Team', 'robots' => 'noindex,nofollow,noarchive,nosnippet', 'referrer' => 'no-referrer', 'descrizione' => '', 'canonical' => '', 'piede' => 'Socialee · Partidea SRL · La Bussola Interna è un prototipo per percorsi formativi volontari, non adatto a decisioni sul personale.' )
 	);
 	$GLOBALS['scb_piede'] = $opz['piede'];
 	?><!doctype html>
@@ -151,7 +151,7 @@ function scb_chiudi( $js = '' ) {
 	$js = scb_js_ascii( $js );
 	?>
 </main>
-<footer class="b-foot"><?php echo esc_html( isset( $GLOBALS['scb_piede'] ) ? $GLOBALS['scb_piede'] : 'Socialee · Influencee SRL' ); ?></footer>
+<footer class="b-foot"><?php echo esc_html( isset( $GLOBALS['scb_piede'] ) ? $GLOBALS['scb_piede'] : 'Socialee · Partidea SRL' ); ?></footer>
 	<?php if ( $js ) : ?>
 <script nonce="<?php echo $n; // phpcs:ignore WordPress.Security.EscapeOutput ?>">
 <?php echo $js; // phpcs:ignore WordPress.Security.EscapeOutput -- script nostro ?>

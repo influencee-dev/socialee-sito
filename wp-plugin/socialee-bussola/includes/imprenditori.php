@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 const SCB_IMP_PATH = '/che-imprenditore-sei/';
 /** Pagina accesa per tutti? Finché è false la vedono solo gli amministratori (per le prove) e non è indicizzata. */
-const SCB_IMP_ATTIVO = false;
+const SCB_IMP_ATTIVO = true;
 
 function scb_imp_dati() {
 	static $d = null;
