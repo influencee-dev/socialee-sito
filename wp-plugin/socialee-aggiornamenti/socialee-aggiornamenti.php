@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Socialee Aggiornamenti
  * Description:       Aggiorna da solo i plugin Socialee dal repository GitHub del sito: ogni ora controlla le versioni pubblicate, scarica gli zip, ne verifica l'impronta, installa, svuota la cache e controlla che il sito risponda; se non risponde rimette la versione precedente. Nessuna chiave da gestire.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Influencee SRL (Socialee)
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SOCU_VERSION', '1.0.1' );
+define( 'SOCU_VERSION', '1.0.2' );
 
 /**
  * Da dove arrivano gli aggiornamenti: cartella consegne/plugin-wordpress del repository pubblico del sito.
@@ -29,6 +29,7 @@ function socu_famiglia() {
 		'socialee-pagine'        => 'Socialee Pagine',
 		'socialee-aggiornamenti' => 'Socialee Aggiornamenti',
 		'socialee-bussola'       => 'Socialee Bussola',
+		'tandem-forms'           => 'Tandem Forms', // solo per portarlo dalla 1.3.0 (che non si aggiorna) alla 1.3.2: poi si aggiorna da Tandem
 	);
 }
 

@@ -260,12 +260,75 @@ function scb_imp_ricevi( WP_REST_Request $req ) {
 		wp_mail( (string) apply_filters( 'scb_imp_avviso_email', get_option( 'admin_email' ) ), 'Quiz imprenditori: nuovo contatto (' . $nome . ' ' . $cognome . ')', implode( "\n", $righe_mail ) );
 		error_log( '[socialee-bussola] quiz imprenditori: ' . $esito ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions
 	}
+	$tandem = scb_imp_tandem(
+		array(
+			array( 'key' => 'nome', 'label' => 'Nome', 'value' => $nome, 'type' => 'text' ),
+			array( 'key' => 'cognome', 'label' => 'Cognome', 'value' => $cognome, 'type' => 'text' ),
+			array( 'key' => 'email', 'label' => 'Email', 'value' => $email, 'type' => 'email' ),
+			array( 'key' => 'telefono', 'label' => 'Telefono', 'value' => $tel, 'type' => 'tel' ),
+			array( 'key' => 'azienda', 'label' => 'Nome dell’azienda', 'value' => $azienda, 'type' => 'text' ),
+			array( 'key' => 'provincia', 'label' => 'Provincia', 'value' => $prov, 'type' => 'select' ),
+			array( 'key' => 'settore', 'label' => 'Settore', 'value' => $settore['valore'], 'type' => 'select' ),
+			array( 'key' => 'tipo_imprenditore', 'label' => 'Tipo di imprenditore', 'value' => $tipo, 'type' => 'text' ),
+			array( 'key' => 'punteggi', 'label' => 'Punteggi del test', 'value' => implode( ' · ', $righe ), 'type' => 'text' ),
+			array( 'key' => 'guida', 'label' => 'Guida regalata', 'value' => $settore['guida'] ? scb_imp_guida_titolo( $settore['guida'] ) : 'Pagina con tutte le guide', 'type' => 'text' ),
+			array( 'key' => 'consenso_marketing', 'label' => 'Consenso marketing (altri regali e Academy)', 'value' => $marketing ? 'sì' : 'no', 'type' => 'checkbox' ),
+			array( 'key' => 'fonte', 'label' => 'Fonte', 'value' => $utm ? $utm : 'diretta', 'type' => 'text' ),
+		)
+	);
 	$log   = (array) get_option( 'scb_imp_registro', array() );
-	$log[] = array( gmdate( 'c' ), substr( md5( strtolower( $email ) ), 0, 8 ), $settore['slug'], $tipo, $marketing ? 1 : 0, 'ok' === $esito ? 'brevo' : $esito );
+	$log[] = array( gmdate( 'c' ), substr( md5( strtolower( $email ) ), 0, 8 ), $settore['slug'], $tipo, $marketing ? 1 : 0, 'ok' === $esito ? 'brevo' : $esito, 'tandem: ' . $tandem );
 	update_option( 'scb_imp_registro', array_slice( $log, -50 ), false ); // ultime 50, senza dati personali
 
 	return new WP_REST_Response( array( 'ok' => true, 'guida' => $guida, 'settore' => $settore['valore'], 'titolo' => $settore['guida'] ? scb_imp_guida_titolo( $settore['guida'] ) : '' ), 200 );
 }
+
+/* ─── Tandem: il quiz è un form di socialee.it come gli altri (Richieste) ─── */
+
+const SCB_IMP_FORM_KEY = 'custom:/che-imprenditore-sei/#modulo';
+
+/** Manda la richiesta a Tandem con il plugin Tandem Forms del sito (dal server; se Tandem non risponde resta in coda). */
+function scb_imp_tandem( array $campi ) {
+	if ( ! class_exists( 'Tandem_Forms' ) ) {
+		return 'plugin Tandem Forms assente';
+	}
+	$ctx = array(
+		'form_key'  => SCB_IMP_FORM_KEY,
+		'form_name' => 'Quiz «Che tipo di imprenditore sei?»',
+		'page_url'  => home_url( SCB_IMP_PATH ),
+		'intent'    => 'SIGNUP',
+		'kind'      => 'BRAND',
+	);
+	try {
+		if ( method_exists( 'Tandem_Forms', 'submit' ) ) { // 1.3.2 e successive
+			$r = Tandem_Forms::submit( $campi, $ctx );
+		} elseif ( method_exists( 'Tandem_Forms', 'build' ) && method_exists( 'Tandem_Forms', 'send' ) ) {
+			$ctx['external_id'] = wp_parse_url( home_url( '/' ), PHP_URL_HOST ) . ':' . SCB_IMP_FORM_KEY . ':' . wp_generate_uuid4();
+			$r                  = Tandem_Forms::send( Tandem_Forms::build( $campi, $ctx ) );
+		} else {
+			return 'versione di Tandem Forms senza invio dal server';
+		}
+	} catch ( \Throwable $e ) {
+		return 'errore: ' . $e->getMessage();
+	}
+	return ! empty( $r['ok'] ) ? 'ok' : 'in coda (' . ( $r['error'] ?? ( 'HTTP ' . ( $r['code'] ?? 0 ) ) ) . ')';
+}
+
+/** Il form si dichiara a Tandem (Tandem Forms 1.3.2+): compare tra i form di socialee.it come collegato. */
+add_filter(
+	'tandem_forms_known_forms',
+	function ( $forms ) {
+		$forms   = (array) $forms;
+		$forms[] = array(
+			'key'    => SCB_IMP_FORM_KEY,
+			'name'   => 'Quiz «Che tipo di imprenditore sei?»',
+			'type'   => 'CUSTOM',
+			'pages'  => array( home_url( SCB_IMP_PATH ) ),
+			'server' => true,
+		);
+		return $forms;
+	}
+);
 
 add_action(
 	'rest_api_init',

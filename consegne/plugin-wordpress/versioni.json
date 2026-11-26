@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-24T20:28:35+00:00",
+ "generato": "2026-11-26T10:47:23+00:00",
  "plugin": {
   "socialee-core": {
    "versione": "1.0.1",
@@ -16,17 +16,23 @@
    "installa": true
   },
   "socialee-aggiornamenti": {
-   "versione": "1.0.1",
+   "versione": "1.0.2",
    "file": "socialee-aggiornamenti.zip",
-   "sha256": "1dff9aa5be66fcffa27993b896086911abeaa2d57779f702b4a98d3d2054580d",
+   "sha256": "a97cd72811f10579d7b086c54af59f2aad56a8daf1f731f5ffcb30c9f3672439",
    "auto": true
   },
   "socialee-bussola": {
-   "versione": "1.3.0",
+   "versione": "1.3.1",
    "file": "socialee-bussola.zip",
-   "sha256": "b42568954f51187ffc64d88f50bf8c9a4364f18af6c38f215b7475693e8c46c2",
+   "sha256": "3997c5971b607c5bf9e0e48da89eec50d8301d4ba80a14a382640b3fcbefbb48",
    "auto": true,
    "installa": true
+  },
+  "tandem-forms": {
+   "versione": "1.3.2",
+   "file": "tandem-forms.zip",
+   "sha256": "fe075471c4a67a191f9c20db70f837325cc3eb019efff576485d6eb525aae4b6",
+   "auto": true
   }
  }
 }

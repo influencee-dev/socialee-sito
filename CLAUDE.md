@@ -39,6 +39,11 @@ Sito WordPress **socialee.it** (agenzia creativa di Influencee SRL). Stesso sche
   in `dati/imprenditori.php`. `SCB_IMP_ATTIVO` (includes/imprenditori.php) accende le due pagine per tutti; da spente
   le vedono solo gli amministratori (accese dal 24/11/2026). Brevo: liste 60 e 61, automazioni 29 (email subito, template 128)
   e 30 (dopo 2 giorni, template 129), attive dal 24/11/2026. Titolare nei testi: Partidea SRL (Socialee è un suo brand).
+  Tandem: ogni contatto del quiz va anche in Tandem › Richieste dal server (`Tandem_Forms::submit()`, form
+  `custom:/che-imprenditore-sei/#modulo`) e il form si dichiara col filtro `tandem_forms_known_forms` (Tandem Forms 1.3.2).
+- `tandem-forms` (26/11/2026): copia di Tandem Forms 1.3.2 (sorgente vera nel repo `tandeem`, public/downloads) nella
+  famiglia di Aggiornamenti solo per portare socialee.it dalla 1.3.0, che non si aggiorna da sola; dalla 1.3.2 si aggiorna
+  da Tandem. Non si modifica qui: le versioni nuove si fanno in `tandeem`.
 
 ## Accesso al sito
 - MCP: `POST https://socialee.it/wp-json/socialee-sito/v1/mcp` (JSON-RPC 2.0; `GET` = elenco strumenti):
